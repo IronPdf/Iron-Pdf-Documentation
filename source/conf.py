@@ -30,11 +30,8 @@ import shlex
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-if on_rtd:
-  from subprocess import call 
-  call('doxygen')
-else:
-  sys.path.append( os.path.dirname(os.path.realpath(__file__)) + "/breathe-4.1.0/")
+
+sys.path.append( os.path.dirname(os.path.realpath(__file__)) + "/breathe-4.1.0/")
 
 
 extensions = ['sphinx.ext.pngmath', 'sphinx.ext.todo', 'breathe' ]
