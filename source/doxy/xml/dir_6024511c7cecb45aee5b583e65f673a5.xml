@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_6024511c7cecb45aee5b583e65f673a5" kind="dir">
+    <compoundname>IronPdf/IronPdf</compoundname>
+    <innerdir refid="dir_dcff0b6326ab2948e16cc436ea793288">IronPdf/IronPdf/Api</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="IronPdf/IronPdf/"/>
+  </compounddef>
+</doxygen>

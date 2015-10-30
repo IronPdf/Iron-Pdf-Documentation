@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Breathe &mdash; IronPdf 4.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="IronPdf 4.0.0 documentation" href="../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="breathe">
+<h1>Breathe<a class="headerlink" href="#breathe" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://travis-ci.org/michaeljones/breathe"><img alt="https://travis-ci.org/michaeljones/breathe.svg?branch=master" src="https://travis-ci.org/michaeljones/breathe.svg?branch=master" /></a>
+<p>This is an extension to reStructuredText and Sphinx to be able to read and
+render the Doxygen xml output.</p>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
+<p>Breathe is available from github and <a class="reference external" href="http://pypi.python.org/pypi/breathe">PyPI, the Python Package Index</a></p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>The documentation is available <a class="reference external" href="http://breathe.readthedocs.org/">here</a>. Thank
+you to the people running <a class="reference external" href="http://readthedocs.org">Read the Docs</a> for such an
+excellent service.</p>
+<p>The source for the documentation is in the <code class="docutils literal"><span class="pre">documentation</span></code> folder if you want
+to built it and read it locally.</p>
+</div>
+<div class="section" id="development">
+<h2>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h2>
+<p>Breathe does not always get the attention it deserves but I am keen to keep it
+moving forward. If you report an issue, please keep reminding me about it until
+it is fixed. I should be better at this but in silence I tend to move to other
+things so keep reminding me.</p>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Breathe doesn&#8217;t have a set of tests at the moment. The documentation does a good
+job of running the different parts of the Breathe functionality but there is
+nothing to check that the output is appropriate.</p>
+<p>To build the documentation, run <code class="docutils literal"><span class="pre">make</span></code> in the root of the project.</p>
+<p>This will run doxygen over the example code and then run the Breathe
+documentation. View the results at:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">documentation</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">html</span><span class="o">/</span><span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>Development is currently done with:</p>
+<ul class="simple">
+<li>Python 2.7.4</li>
+<li>Docutils 0.11</li>
+<li>Sphinx 1.2.2</li>
+<li>Doxygen 1.8.4</li>
+</ul>
+<p>Doxygen 1.5.1 seems to produce xml with repeated sections which causes Breathe
+some confusion. Not sure when this was resolved but it might be best to go for
+the latest possible.</p>
+</div>
+<div class="section" id="mailing-list">
+<h2>Mailing List<a class="headerlink" href="#mailing-list" title="Permalink to this headline">¶</a></h2>
+<p>There is a mailing list available on Google groups:</p>
+<blockquote>
+<div><a class="reference external" href="https://groups.google.com/forum/#!forum/sphinx-breathe">https://groups.google.com/forum/#!forum/sphinx-breathe</a></div></blockquote>
+<p>The previous mailing list was on <a class="reference external" href="http://librelist.com">librelist.com</a> and the
+archives are available <a class="reference external" href="http://librelist.com/browser/breathe/">here</a>.</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Examples of Breathe used by other projects:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://cppformat.readthedocs.org/en/latest/">cppformat</a>
+[<a class="reference external" href="https://media.readthedocs.org/pdf/cppformat/master/cppformat.pdf">pdf</a>]</li>
+</ul>
+<p>If you have an example you would like listed here, please make a github issue
+with the details.</p>
+</div>
+<div class="section" id="alternatives">
+<h2>Alternatives<a class="headerlink" href="#alternatives" title="Permalink to this headline">¶</a></h2>
+<p>Breathe is not the only solution to this problem. These are the alternatives
+that we know about. We are very happy to list others if you&#8217;d like to provide a
+link in a github issue or get in touch on the mailing list.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/troelsfr/Gasp">Gasp</a></li>
+<li><a class="reference external" href="https://bitbucket.org/reima/robin">Robin</a></li>
+</ul>
+</div>
+<div class="section" id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Permalink to this headline">¶</a></h2>
+<p>Breathe is maintained by <a class="reference external" href="https://github.com/michaeljones">michaeljones</a> &amp;
+<a class="reference external" href="https://github.com/vitaut">vitaut</a> with contributions from:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/nijel">nijel</a></li>
+<li><a class="reference external" href="https://github.com/sebastianschaetz">sebastianschaetz</a></li>
+<li><a class="reference external" href="https://github.com/mbolivar">mbolivar</a></li>
+<li><a class="reference external" href="https://github.com/queezythegreat">queezythegreat</a></li>
+<li><a class="reference external" href="https://github.com/abingham">abingham</a></li>
+<li><a class="reference external" href="https://github.com/davidm">davidm</a></li>
+<li><a class="reference external" href="https://github.com/hobu">hobu</a></li>
+<li><a class="reference external" href="https://github.com/magro11">magro11</a></li>
+<li><a class="reference external" href="https://github.com/scopatz">scopatz</a></li>
+<li><a class="reference external" href="https://github.com/vonj">vonj</a></li>
+<li><a class="reference external" href="https://github.com/jmnas">jmnas</a></li>
+<li><a class="reference external" href="https://github.com/donkopotamus">donkopotamus</a></li>
+<li><a class="reference external" href="https://github.com/jo3w4rd">jo3w4rd</a></li>
+<li><a class="reference external" href="https://github.com/AnthonyTruchet">Anthony Truchet</a></li>
+<li><a class="reference external" href="https://github.com/danielmatz">Daniel Matz</a></li>
+<li><a class="reference external" href="https://github.com/ahundt">Andrew Hundt</a></li>
+<li><a class="reference external" href="https://github.com/sebastinas">sebastinas</a></li>
+<li><a class="reference external" href="https://github.com/robo9k">robo9k</a></li>
+<li><a class="reference external" href="https://github.com/sieben">sieben</a></li>
+<li><a class="reference external" href="https://github.com/rweickelt">rweickelt</a></li>
+<li><a class="reference external" href="https://github.com/sam-roth">sam-roth</a></li>
+<li><a class="reference external" href="https://github.com/bnewbold">bnewbold</a></li>
+<li><a class="reference external" href="https://github.com/serge-sans-paille">serge-sans-paille</a></li>
+</ul>
+<p>Thanks to:</p>
+<ul class="simple">
+<li>Dimitri van Heesch for <a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a>.</li>
+<li>Georg Brandl for <a class="reference external" href="http://sphinx-doc.org">Sphinx</a>.</li>
+<li>David Goodger for <a class="reference external" href="http://docutils.sourceforge.net/">Docutils</a> and reStructuredText.</li>
+</ul>
+</div>
+<div class="section" id="change-log">
+<h2>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<p>Inspired by <a class="reference external" href="http://keepachangelog.com/">Keepachangelog.com</a>.</p>
+<ul class="simple">
+<li>2015-08-27 - Breathe v4.1.0<ul>
+<li>Added<ul>
+<li><code class="docutils literal"><span class="pre">breathe_doxygen_config_options</span></code> config variable which allows for adding
+more config lines to the doxygen file used for the auto-directives.</li>
+</ul>
+</li>
+<li>Fixed<ul>
+<li>Display of array &amp; array reference parameters for functions.</li>
+<li>Handling of links to classes with template arguments.</li>
+<li>Handling of unnamed enums in C.</li>
+<li>Naming of template parameter section.</li>
+<li>Finding functions that are within groups.</li>
+<li>Rendering of &#8216;typename&#8217; and &#8216;class&#8217; keywords for templates.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2015-04-02 - Breathe v4.0.0<ul>
+<li>Significant work on the code base with miminal reStructureText interface
+changes. To be documented.</li>
+</ul>
+</li>
+<li>2014-11-09 - Breathe v3.2.0<ul>
+<li>Nothing Added, Deprecated or Removed</li>
+<li>Fixed<ul>
+<li>Changed docutils/Sphinx node usage to fix latex/pdf output.</li>
+<li>When checking for path separators check for both <code class="docutils literal"><span class="pre">/</span></code> and <code class="docutils literal"><span class="pre">\</span></code>
+regardless of the platform.</li>
+<li><code class="docutils literal"><span class="pre">KeyError</span></code> when using <code class="docutils literal"><span class="pre">auto</span></code> directives without specifying the
+<code class="docutils literal"><span class="pre">:project:</span></code> option even though the default project config setting was
+set.</li>
+<li>Use of <code class="docutils literal"><span class="pre">doxygenfunction</span></code> no longer inappropriately triggers the
+duplicate target check and fails to output link targets.</li>
+<li>Support for inline urls in the doxygen comments.</li>
+<li>Support for array notation in function parameters.</li>
+<li>Reduced intention by changing <code class="docutils literal"><span class="pre">section-defs</span></code> to use <code class="docutils literal"><span class="pre">container</span></code> &amp;
+<code class="docutils literal"><span class="pre">rubric</span></code> nodes rather than <code class="docutils literal"><span class="pre">desc</span></code> nodes with signatures &amp; content. Now
+headings like &#8216;Public Functions&#8217; appear inline with their subject matter.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2014-09-07 - Breathe v3.1.0<ul>
+<li>Nothing Deprecated or Removed</li>
+<li>Added<ul>
+<li>The <code class="docutils literal"><span class="pre">doxygenclass</span></code> directive can now reference template specialisations
+by specifying the specialisation in the argument name.</li>
+</ul>
+</li>
+<li>Fixed<ul>
+<li>Displaying function parameters for Qt slots output. Previously they were
+missing even though Qt Slots are essentially just functions.</li>
+<li>Displaying headings from doxygen comments as emphasized text.</li>
+<li>Crash when generating warning about being unable to find a define,
+variable, enum, typedef or union.</li>
+<li>Only output the definition name for a function parameter if the declartion
+name is not available. Previously, where they were both available we were
+getting two names next to each other for no good reason.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2014-08-04 - Breathe v3.0.0<ul>
+<li>Improve output of const, volatile, virtual and pure-virtual keywords.</li>
+<li>Fix css class output for HTML so that object types rather than names are
+output as the css classes. eg. &#8216;function&#8217; instead of &#8216;myFunction&#8217;.</li>
+<li>Fix issue with Breathe getting confused over functions appearing in header
+and implementation files.</li>
+<li>Improve matching for overloaded functions when using <code class="docutils literal"><span class="pre">doxygenfunction</span></code>
+directive. Also, provide a list of potential matches when no match is found.</li>
+<li>Improved <code class="docutils literal"><span class="pre">:members:</span></code> implementation to handle inner classes properly.</li>
+<li>Updated <code class="docutils literal"><span class="pre">doxygenstruct</span></code> to share the <code class="docutils literal"><span class="pre">doxygenclass</span></code> implementation path
+which grants it the options from <code class="docutils literal"><span class="pre">doxygenclass</span></code> directive.</li>
+<li>Added <code class="docutils literal"><span class="pre">:outline:</span></code> option support to <code class="docutils literal"><span class="pre">doxygengroup</span></code> &amp;
+<code class="docutils literal"><span class="pre">doxygennamespace</span></code> directives.</li>
+<li>Added <code class="docutils literal"><span class="pre">doxygennamespace</span></code> directive.</li>
+<li>Added <code class="docutils literal"><span class="pre">:undoc-members:</span></code> option to <code class="docutils literal"><span class="pre">doxygenclass</span></code> &amp; <code class="docutils literal"><span class="pre">doxygengroup</span></code>
+directives.</li>
+<li><strong>Breaking change</strong>: Removed <code class="docutils literal"><span class="pre">:sections:</span></code> option for <code class="docutils literal"><span class="pre">doxygenclass</span></code> &amp;
+<code class="docutils literal"><span class="pre">doxygengroup</span></code> directives and replaced it with <code class="docutils literal"><span class="pre">:members:</span></code>,
+<code class="docutils literal"><span class="pre">:protected-members:</span></code> and <code class="docutils literal"><span class="pre">:private-members:</span></code>, and changed
+<code class="docutils literal"><span class="pre">breathe_default_sections</span></code> config variable to <code class="docutils literal"><span class="pre">breathe_default_members</span></code>.
+This is designed to more closely match the Sphinx autodoc functionality and
+interface.</li>
+</ul>
+</li>
+<li>2014-06-15 - Breathe v2.0.0<ul>
+<li>Add compare script for checking changes to documentation caused by changes
+in the implementation.</li>
+<li>Switched to <code class="docutils literal"><span class="pre">https</span></code> reference for MathJax Javascript.</li>
+<li><strong>Breaking change</strong>: Change <code class="docutils literal"><span class="pre">autodoxygen*</span></code> directives to require
+explicitly declared source files in the <code class="docutils literal"><span class="pre">conf.py</span></code> rather than attempting
+to detect them from the directive arguments.</li>
+<li>Switch documentation hosting to ReadTheDocs.org.</li>
+<li><strong>Breaking change</strong>: Switch to assuming all relative paths are relative to
+the directory holding the <code class="docutils literal"><span class="pre">conf.py</span></code> file. Previously, it would assume they
+were relative to the user&#8217;s current working directory. This breaks projects
+which use separate build &amp; source directories.</li>
+<li>Add <code class="docutils literal"><span class="pre">doxygenunion</span></code> directive.</li>
+<li>Add <code class="docutils literal"><span class="pre">doxygengroup</span></code> directive.</li>
+<li>Add support for lists in the output. They were previously ignored.</li>
+<li>Updated implementation to use the docutils nodes that Sphinx does where
+possible.</li>
+</ul>
+</li>
+<li>Breathe v1.2.0<ul>
+<li>Change log not recorded.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Breathe</a><ul>
+<li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#development">Development</a></li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#mailing-list">Mailing List</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#alternatives">Alternatives</a></li>
+<li><a class="reference internal" href="#credits">Credits</a></li>
+<li><a class="reference internal" href="#change-log">Change Log</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/breathe-4.1.0/README.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, http://IronPdf.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../_sources/breathe-4.1.0/README.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

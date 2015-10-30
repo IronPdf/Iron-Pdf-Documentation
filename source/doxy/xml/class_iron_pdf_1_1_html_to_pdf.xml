@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_iron_pdf_1_1_html_to_pdf" kind="class" language="C#" prot="public">
+    <compoundname>IronPdf::HtmlToPdf</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_iron_pdf_1_1_html_to_pdf_1a19438f0f6a6cc9d092a393c6205cef35" prot="private" static="yes" mutable="no">
+        <type>string[]</type>
+        <definition>string [] IronPdf.HtmlToPdf.APPNAMES</definition>
+        <argsstring></argsstring>
+        <name>APPNAMES</name>
+        <initializer>= new string[] { &quot;IRONPDF&quot;, &quot;IRON&quot;, &quot;IRONPDF.ASPXPDF&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="89" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_iron_pdf_1_1_html_to_pdf_1a2459c190a13a9bafb6dda42ca375818f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_iron_pdf_1_1_pdf_print_options" kindref="compound">PdfPrintOptions</ref></type>
+        <definition>PdfPrintOptions IronPdf.HtmlToPdf.PrintOptions</definition>
+        <argsstring></argsstring>
+        <name>PrintOptions</name>
+        <briefdescription>
+<para>Sets PDF output options such as Paper-Size, Dpi, Headers and Footers </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="94" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1a8c811e7ad1969c17b628666aa7bb34ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IronPdf.HtmlToPdf.HtmlToPdf</definition>
+        <argsstring>()</argsstring>
+        <name>HtmlToPdf</name>
+        <briefdescription>
+<para><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf</ref> allows you to create PDF files from any web page or HTML Snippet </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="99" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1add42c2ae954d5d4249e268481e0d6554" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>IronPdf.HtmlToPdf.HtmlToPdf</definition>
+        <argsstring>(PdfPrintOptions PrintOptions)</argsstring>
+        <name>HtmlToPdf</name>
+        <param>
+          <type><ref refid="class_iron_pdf_1_1_pdf_print_options" kindref="compound">PdfPrintOptions</ref></type>
+          <declname>PrintOptions</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf</ref> allows you to create PDF files from any web page or HTML Snippet </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PrintOptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets PDF output options such as Paper-Size, Dpi, Headers and Footers using an instance of the IronPDF.PDFPrintOptions Class.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="108" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="108" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1ace652aebd43df37f768dc74b88b6ef24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></type>
+        <definition>PdfResource IronPdf.HtmlToPdf.RenderUrlAsPdf</definition>
+        <argsstring>(Uri Url, WebClient CustomWebClient=null)</argsstring>
+        <name>RenderUrlAsPdf</name>
+        <param>
+          <type>Uri</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type>WebClient</type>
+          <declname>CustomWebClient</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Renders the URL as PDF binary data. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Custom WebClient and PDFPrinting options can be set optionally.</para><para>Example:</para><para><computeroutput><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> Uri myUri = new Uri(&quot;http://www.example.com&quot;);</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderUrlAsPdf(myUri).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An absolute Uri.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CustomWebClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A custom System.Net.WebClient for fetching the url. This allows prgramatic control of cookies, credentials and proxy settings.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>System.Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RenderUrlAsPdf - Url must be a fully formed, absolute URI starting with <ulink url="http://">http://</ulink> or <ulink url="https://">https://</ulink> - + Url.ToString()</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="174" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="174" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1a2c139e484a7debb76d4d573d2674cd3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></type>
+        <definition>PdfResource IronPdf.HtmlToPdf.RenderUrlAsPdf</definition>
+        <argsstring>(string Url, WebClient CustomWebClient=null)</argsstring>
+        <name>RenderUrlAsPdf</name>
+        <param>
+          <type>string</type>
+          <declname>Url</declname>
+        </param>
+        <param>
+          <type>WebClient</type>
+          <declname>CustomWebClient</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Renders the URL as PDF binary data. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Custom WebClient and PDFPrinting options can be set optionally.</para><para>Example:</para><para><computeroutput><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderUrlAsPdf(&quot;http://www.example.com&quot;).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An absolute Uri as a string.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CustomWebClient</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A custom System.Net.WebClient for fetching the url. This allows prgramatic control of cookies, credentials and proxy settings.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>System.Exception</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RenderUrlAsPdf - Url must be a fully formed, absolute URI starting with <ulink url="http://">http://</ulink> or <ulink url="https://">https://</ulink> - + Url.ToString()</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="210" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="210" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1ab8dc3c8a7e81404b81fa5a750b18054f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></type>
+        <definition>PdfResource IronPdf.HtmlToPdf.RenderHtmlAsPdf</definition>
+        <argsstring>(string Html, Uri BaseUrl=null)</argsstring>
+        <name>RenderHtmlAsPdf</name>
+        <param>
+          <type>string</type>
+          <declname>Html</declname>
+        </param>
+        <param>
+          <type>Uri</type>
+          <declname>BaseUrl</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Creates a PDF file from an HTML string, and returns it as an <ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">IronPdf.PdfResource</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Custom WebClient and PDFPrinting options can be set optionally.</para><para>Example:</para><para><computeroutput><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Html</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The HTML to be turned into a PDF as a string</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BaseUrl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Setting the BaseURL property gives the HTML a relative content link, links, css etc...</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="234" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="234" bodyend="242"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1afe2099010d34160789f2fcfa537c584d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_iron_pdf_1_1_pdf_print_options" kindref="compound">PdfPrintOptions</ref></type>
+        <definition>static PdfPrintOptions IronPdf.HtmlToPdf.DefaultPrintOptions</definition>
+        <argsstring>()</argsstring>
+        <name>DefaultPrintOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="120" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="120" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1a51ff344f1d1d3ec9f48fd92db065af05" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_iron_pdf_1_1_pdf_resource" kindref="compound">PdfResource</ref></type>
+        <definition>PdfResource IronPdf.HtmlToPdf.MakePDFResource</definition>
+        <argsstring>(byte[] data, PdfPrintOptions PrintSettings)</argsstring>
+        <name>MakePDFResource</name>
+        <param>
+          <type>byte[]</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_iron_pdf_1_1_pdf_print_options" kindref="compound">PdfPrintOptions</ref></type>
+          <declname>PrintSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="125" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="125" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_iron_pdf_1_1_html_to_pdf_1ad8f5a88266aecba23c5b7e515e8b6519" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte [] IronPdf.HtmlToPdf.Mark</definition>
+        <argsstring>(byte[] data, PdfPrintOptions PrintSettings)</argsstring>
+        <name>Mark</name>
+        <param>
+          <type>byte[]</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_iron_pdf_1_1_pdf_print_options" kindref="compound">PdfPrintOptions</ref></type>
+          <declname>PrintSettings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="138" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="138" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf</ref> allows you to create PDF files from any web page or HTML Snippet </para>    </briefdescription>
+    <detaileddescription>
+<para>Example:</para><para><computeroutput><ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="class_iron_pdf_1_1_html_to_pdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> myHtmlToPdf.PrintOptions.Title = &quot;A Great PDF Title&quot;;</computeroutput></para><para><computeroutput> myHtmlToPdf.PrintOptions.EnableJavaScript = true;</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>IronPdf.PdfPrintOptions</label>
+        <link refid="class_iron_pdf_1_1_pdf_print_options"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>InputEncoding</edgelabel>
+          <edgelabel>PaperKind</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IronPdf.HtmlToPdf</label>
+        <link refid="class_iron_pdf_1_1_html_to_pdf"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>PrintOptions</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>System</label>
+      </node>
+    </collaborationgraph>
+    <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs" line="88" column="1" bodyfile="IronPdf/IronPdf/Api/HtmlToPdf.cs" bodystart="87" bodyend="243"/>
+    <listofallmembers>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1a19438f0f6a6cc9d092a393c6205cef35" prot="private" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>APPNAMES</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1afe2099010d34160789f2fcfa537c584d" prot="private" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>DefaultPrintOptions</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1a8c811e7ad1969c17b628666aa7bb34ef" prot="public" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>HtmlToPdf</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1add42c2ae954d5d4249e268481e0d6554" prot="public" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>HtmlToPdf</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1a51ff344f1d1d3ec9f48fd92db065af05" prot="private" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>MakePDFResource</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1ad8f5a88266aecba23c5b7e515e8b6519" prot="private" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>Mark</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1a2459c190a13a9bafb6dda42ca375818f" prot="public" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>PrintOptions</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1ab8dc3c8a7e81404b81fa5a750b18054f" prot="public" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>RenderHtmlAsPdf</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1ace652aebd43df37f768dc74b88b6ef24" prot="public" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>RenderUrlAsPdf</name></member>
+      <member refid="class_iron_pdf_1_1_html_to_pdf_1a2c139e484a7debb76d4d573d2674cd3e" prot="public" virt="non-virtual"><scope>IronPdf::HtmlToPdf</scope><name>RenderUrlAsPdf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

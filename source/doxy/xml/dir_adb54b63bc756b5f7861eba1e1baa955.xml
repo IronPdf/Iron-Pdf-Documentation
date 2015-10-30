@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_adb54b63bc756b5f7861eba1e1baa955" kind="dir">
+    <compoundname>IronPdf/IronPdf/Api/Config</compoundname>
+    <innerfile refid="PdfPrintOptions_8cs">PdfPrintOptions.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="IronPdf/IronPdf/Api/Config/"/>
+  </compounddef>
+</doxygen>
