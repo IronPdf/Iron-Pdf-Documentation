@@ -22,10 +22,10 @@ To deploy to a server or machine in production - a watermark will show on your P
  
 License keys can be applied to App.Config, Machine.COnfig, Web.Config - or even in your PDFPrintOptions instances.  If you genuinely cant afford a license and are a good cause - please let us know.  We ware decent people.
 
-You can learn more, and get licensed http://localhost/iron/license
+You can learn more, and get licensed http://ironpdf.com/license
 
-If you need to see the full legal text - it can be found here:
-http://localhost/iron/license-terms
+If you need to see the full legal text - it can be found here: http://ironpdf.com/license-terms
+
 
 
 Full License Text
