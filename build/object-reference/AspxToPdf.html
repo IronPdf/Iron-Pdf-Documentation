@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>IronPdf.AspxToPdf &mdash; IronPdf 4.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="IronPdf 4.0.0 documentation" href="../index.html" />
+    <link rel="next" title="IronPdf.PdfPrintOptions" href="pdfprintoptions.html" />
+    <link rel="prev" title="IronPdf.HtmlToPdf" href="htmltopdf.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ironpdf-aspxtopdf">
+<h1>IronPdf.AspxToPdf<a class="headerlink" href="#ironpdf-aspxtopdf" title="Permalink to this headline">¶</a></h1>
+<p>AspxToPdf is a static class used to turn any ASPX web form into a PDF.  The look and feel remain the same - but the output becomes a PDF.</p>
+<p>This is simply achieved by adding AspxToPdf in your ASPX page code-behind.   <em>Normally this is a file named like Default.aspx.cs</em>.</p>
+<p>Just call <strong>IronPdf.AspxToPdf.RenderThisPageAsPdf()</strong> in your of your ASPX Form onLoad event.</p>
+<div class="section" id="examples">
+<h2>Examples:<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="basic-example">
+<h3>Basic Example<a class="headerlink" href="#basic-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c#"><div class="highlight"><pre><span class="k">private</span> <span class="k">void</span> <span class="nf">Form1_Load</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+     <span class="p">{</span>
+          <span class="c1">//..</span>
+          <span class="n">IronPdf</span><span class="p">.</span><span class="n">AspxToPdf</span><span class="p">.</span><span class="n">RenderThisPageAsPDF</span><span class="p">();</span>
+      <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="advanced-example">
+<h3>Advanced Example<a class="headerlink" href="#advanced-example" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>using IronPdf;</p>
+<dl class="docutils">
+<dt>private void Form1_Load(object sender, EventArgs e)</dt>
+<dd><p class="first">{
+//..</p>
+<p>var PrintOptions = new PdfPrintOptions(){ Dpi=100 };
+PrintOptions.SetHeaderText(&#8220;{page} of {total-pages}”);</p>
+<p>AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, &#8220;FileName.pdf&#8221;, PrintOptions);</p>
+<p class="last">}</p>
+</dd>
+</dl>
+</div></blockquote>
+<div class="section" id="full-object-reference-for-ironpdf-aspxtopdf">
+<h4>Full Object Reference for IronPdf.AspxToPdf<a class="headerlink" href="#full-object-reference-for-ironpdf-aspxtopdf" title="Permalink to this headline">¶</a></h4>
+<dl class="class">
+<dt id="_CPPv2N7IronPdf9AspxToPdfE">
+<span id="IronPdf::AspxToPdf"></span><span class="target" id="project0classIronPdf_1_1AspxToPdf"></span><em class="property">class </em><code class="descclassname">IronPdf::</code><code class="descname">AspxToPdf</code><a class="headerlink" href="#_CPPv2N7IronPdf9AspxToPdfE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders any .Net Web Page (ASPX) into a PDF Document. Simply add it to the Page_Load event. </p>
+<p>Example:</p>
+<p><code class="docutils literal"><span class="pre">protected</span> <span class="pre">void</span> <span class="pre">Page_Load(object</span> <span class="pre">sender,</span> <span class="pre">EventArgs</span> <span class="pre">e){</span></code></p>
+<p><code class="docutils literal"> <a class="reference internal" href="#project0classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b"><span><span class="pre">IronPdf.AspxToPdf.RenderThisPageAsPDF()</span></span></a><span class="pre">;</span> </code></p>
+<p><code class="docutils literal"> <span class="pre">}</span> </code> </p>
+<div class="breathe-sectiondef container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="type">
+<dt id="_CPPv2N7IronPdf9AspxToPdf13FileBehaviourE">
+<span id="IronPdf::AspxToPdf::FileBehaviour"></span><span class="target" id="project0classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4"></span><em class="property">enum </em><code class="descname">FileBehaviour</code><a class="headerlink" href="#_CPPv2N7IronPdf9AspxToPdf13FileBehaviourE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the requested user web browser behavior towards the PDF: Downdload (Attachment) or display InBrowser (where plugin available). </p>
+<p><em>Values:</em></p>
+<dl class="member">
+<dt id="_CPPv2N7IronPdf9AspxToPdf10AttachmentE">
+<span id="IronPdf::AspxToPdf::Attachment"></span><span class="target" id="project0classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4ae9cb217697088a98b1937d111d936281"></span><code class="descname">Attachment</code><a class="headerlink" href="#_CPPv2N7IronPdf9AspxToPdf10AttachmentE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv2N7IronPdf9AspxToPdf9InBrowserE">
+<span id="IronPdf::AspxToPdf::InBrowser"></span><span class="target" id="project0classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4a9a7001f8b8a35abfed6edf97bf01fb0a"></span><code class="descname">InBrowser</code><a class="headerlink" href="#_CPPv2N7IronPdf9AspxToPdf9InBrowserE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef container">
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="function">
+<dt>
+<span class="target" id="project0classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b"></span><code class="descname">static void IronPdf.AspxToPdf.RenderThisPageAsPDF(FileBehaviour PDFBehaviour, String PdfFileName, PdfPrintOptions PrintOptions)</code></dt>
+<dd><p>Automagically renders any ASPX page into PDF instead of HTML. Use it in the Page_Load Event. </p>
+<p>Example:</p>
+<p><code class="docutils literal"><span class="pre">protected</span> <span class="pre">void</span> <span class="pre">Page_Load(object</span> <span class="pre">sender,</span> <span class="pre">EventArgs</span> <span class="pre">e){</span></code></p>
+<p><code class="docutils literal"> <a class="reference internal" href="#project0classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b"><span><span class="pre">IronPdf.AspxToPdf.RenderThisPageAsPDF</span></span></a><span class="pre">(FileBehaviour.Attachment,</span> <span class="pre">&quot;MyPdf.pdf&quot;,</span> <span class="pre">new</span> <span class="pre">PdfPrintOptions(){</span> <span class="pre">Dpi</span> <span class="pre">=</span> <span class="pre">300</span> <span class="pre">});</span> </code></p>
+<p><code class="docutils literal"> <span class="pre">}</span> </code> </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">PDFBehaviour</span></code> - <p>Specifies if the PDF file should be downloaded as an attachment, or displayed directly in the browser (if an pdf browser plug-in is present).</p>
+</li>
+<li><code class="first docutils literal"><span class="pre">PdfFileName</span></code> - <p>The file-name of the PDF. If no name is set - a suitable name will be automatically assigned chosen based on the HTML title, PrintOptions or name of the ASPX page. </p>
+</li>
+<li><code class="first docutils literal"><span class="pre">PrintOptions</span></code> - <p>Sets PDF output options such as Pdf Title, Paper-Size, Dpi, Headers and Footers</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">IronPdf.AspxToPdf</a><ul>
+<li><a class="reference internal" href="#examples">Examples:</a><ul>
+<li><a class="reference internal" href="#basic-example">Basic Example</a></li>
+<li><a class="reference internal" href="#advanced-example">Advanced Example</a><ul>
+<li><a class="reference internal" href="#full-object-reference-for-ironpdf-aspxtopdf">Full Object Reference for IronPdf.AspxToPdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="htmltopdf.html" title="previous chapter">IronPdf.HtmlToPdf</a></li>
+      <li>Next: <a href="pdfprintoptions.html" title="next chapter">IronPdf.PdfPrintOptions</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/object-reference/aspxtopdf.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, http://IronPdf.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../_sources/object-reference/aspxtopdf.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

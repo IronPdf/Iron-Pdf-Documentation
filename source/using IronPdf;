@@ -1,0 +1,12 @@
+		using IronPdf;
+		//..
+
+		HtmlToPdf HtmlToPdf = new IronPdf.HtmlToPdf();
+		 HtmlToPdf.PrintOptions.EnableJavaScript = true;
+		// many more options here 
+
+		HtmlToPdf.RenderHtmlAsPdf(“<p>html</p>“).SaveAs(@“Path\File.Pdf”);
+		// or
+		 HtmlToPdf.RenderUrlAsPdf(“http://myurl.com").SaveAs(@"Path\File.Pdf");
+		// or 
+		HtmlToPdf.RenderUrlAsPdf(new Uri(“http://myurl.com”)).SaveAs(@“Path\File.Pdf”);

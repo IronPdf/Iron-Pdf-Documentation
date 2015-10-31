@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>QuickStart &mdash; IronPdf 4.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '4.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IronPdf 4.0.0 documentation" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="quickstart">
+<h1>QuickStart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="get-ironpdf-installed-in-your-project-in-60-seconds">
+<h2>Get IronPdf Installed in your project in 60 seconds.<a class="headerlink" href="#get-ironpdf-installed-in-your-project-in-60-seconds" title="Permalink to this headline">¶</a></h2>
+<p><strong>Using Nuget Package manager in Visual Studio</strong></p>
+<div class="highlight-bash"><div class="highlight"><pre>PM&gt; Install-Package IronPdf
+</pre></div>
+</div>
+<p><strong>Or Download IronPdf as DLL</strong></p>
+<ul class="simple">
+<li>Get <a class="reference external" href="http://localhost/iron/packages/IronPdf.zip">http://localhost/iron/packages/IronPdf.zip</a></li>
+<li>Add IronPdf.dll  to your project as a reference or to the GAC.</li>
+<li><em>Lazy option - just copy the dll into your /Bin folder in .net web applications.</em></li>
+</ul>
+</div>
+<div class="section" id="basic-usage">
+<h2>Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="html-string-to-pdf">
+<h3>HTML String to Pdf<a class="headerlink" href="#html-string-to-pdf" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c#"><div class="highlight"><pre>using IronPdf;
+
+HtmlToPdf HtmlToPdf = new IronPdf.HtmlToPdf();
+HtmlToPdf.RenderHtmlAsPdf(@“&lt;p&gt;html&lt;/p&gt;“).SaveAs(@“Path\File.Pdf”);
+</pre></div>
+</div>
+</div>
+<div class="section" id="url-to-pdf">
+<h3>Url to Pdf<a class="headerlink" href="#url-to-pdf" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c#"><div class="highlight"><pre>using IronPdf;
+
+HtmlToPdf HtmlToPdf = new IronPdf.HtmlToPdf();
+HtmlToPdf.RenderUrlAsPdf(@“http://myurl.com&quot;).SaveAs(@&quot;Path\File.Pdf&quot;);
+</pre></div>
+</div>
+<p>Advanced usage - you can also pass a System.Net.WebClient to RenderUrlAsPdf.</p>
+<div class="highlight-c#"><div class="highlight"><pre>//...
+HtmlToPdf.RenderUrlAsPdf(@“http://myurl.com”, myWebClient ).SaveAs(&quot;File.Pdf&quot;);
+</pre></div>
+</div>
+<p>This allows you to set login credentials, proxy settings, special headers, cookies - to log  in to protected / secure web pages.</p>
+</div>
+<div class="section" id="pdf-settings">
+<h3>Pdf Settings<a class="headerlink" href="#pdf-settings" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c#"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
+
+<span class="n">HtmlToPdf</span> <span class="n">HtmlToPdf</span> <span class="p">=</span> <span class="k">new</span> <span class="n">IronPdf</span><span class="p">.</span><span class="n">HtmlToPdf</span><span class="p">();</span>
+
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">Dpi</span> <span class="p">=</span> <span class="m">300</span><span class="p">;</span>
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">PDFPaperSize</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Drawing</span><span class="p">.</span><span class="n">PaperKind</span><span class="p">.</span><span class="n">A4</span><span class="p">;</span>
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">EnableJavaScript</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">AllowScreenCss</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">SetHeaderText</span> <span class="p">=</span> <span class="s">&quot;{page} of {total-pages}&quot;</span><span class="p">;</span>
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">GrayScale</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>You can also create a reusable instance of IronPDF.PdfPrintOptions and use it in the IronPdf.HtmlToPdf constructor.</p>
+</div>
+<div class="section" id="aspxtopdf">
+<h3>AspxToPdf<a class="headerlink" href="#aspxtopdf" title="Permalink to this headline">¶</a></h3>
+<p>Changes any ASPX web page to automatically render as a Pdf document instead of html.</p>
+<div class="highlight-c#"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="nf">Form1_Load</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="c1">//..</span>
+<span class="n">AspxToPdf</span><span class="p">.</span><span class="n">RenderThisPageAsPDF</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="aspxtopdf-with-advanced-settings">
+<h3>AspxToPdf with Advanced Settings<a class="headerlink" href="#aspxtopdf-with-advanced-settings" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c#"><div class="highlight"><pre><span class="n">IronPdf</span><span class="p">.</span><span class="n">AspxToPdf</span><span class="p">.</span><span class="n">RenderThisPageAsPDF</span><span class="p">(</span><span class="n">AspxToPdf</span><span class="p">.</span><span class="n">FileBehaviour</span><span class="p">.</span><span class="n">Attachment</span><span class="p">,</span> <span class="s">&quot;MyPdfDownload.pdf&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">PdfPrintOptions</span><span class="p">(){</span> <span class="n">Dpi</span> <span class="p">=</span> <span class="m">300</span><span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="outputs">
+<h3>Outputs<a class="headerlink" href="#outputs" title="Permalink to this headline">¶</a></h3>
+<p>HtmlToPdf.RenderUrlAsPdf and  HtmlToPdf.RenderHtmlAsPdf return an instance of the
+IronPdf.PdfResource class.</p>
+<p>In the above examples - we directly save to file.</p>
+<p>Its is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[]) or Memory Stream  using the <em>Stream</em> and <em>BinaryData</em> properties.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">QuickStart</a><ul>
+<li><a class="reference internal" href="#get-ironpdf-installed-in-your-project-in-60-seconds">Get IronPdf Installed in your project in 60 seconds.</a></li>
+<li><a class="reference internal" href="#basic-usage">Basic Usage</a><ul>
+<li><a class="reference internal" href="#html-string-to-pdf">HTML String to Pdf</a></li>
+<li><a class="reference internal" href="#url-to-pdf">Url to Pdf</a></li>
+<li><a class="reference internal" href="#pdf-settings">Pdf Settings</a></li>
+<li><a class="reference internal" href="#aspxtopdf">AspxToPdf</a></li>
+<li><a class="reference internal" href="#aspxtopdf-with-advanced-settings">AspxToPdf with Advanced Settings</a></li>
+<li><a class="reference internal" href="#outputs">Outputs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/quickstart.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, http://IronPdf.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/quickstart.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
