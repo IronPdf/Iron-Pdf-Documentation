@@ -52,7 +52,7 @@
         <briefdescription>
 <para>Automagically renders any ASPX page into PDF instead of HTML. Use it in the Page_Load Event. </para>        </briefdescription>
         <detaileddescription>
-<para>Example: <computeroutput>protected void Page_Load(object sender, EventArgs e){</computeroutput> <computeroutput> <ref refid="classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b" kindref="member">IronPdf.AspxToPdf.RenderThisPageAsPDF</ref>(FileBehaviour.Attachment, &quot;MyPdf.pdf&quot;, new PdfPrintOptions(){ Dpi = 300 }); </computeroutput> <computeroutput> } </computeroutput>  <parameterlist kind="param"><parameteritem>
+<para>Example:</para><para><computeroutput>protected void Page_Load(object sender, EventArgs e){</computeroutput></para><para><computeroutput> <ref refid="classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b" kindref="member">IronPdf.AspxToPdf.RenderThisPageAsPDF</ref>(FileBehaviour.Attachment, &quot;MyPdf.pdf&quot;, new PdfPrintOptions(){ Dpi = 300 }); </computeroutput></para><para><computeroutput> } </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>PDFBehaviour</parametername>
 </parameternamelist>
@@ -131,7 +131,7 @@
     <briefdescription>
 <para>Renders any .Net Web Page (ASPX) into a PDF Document. Simply add it to the Page_Load event. </para>    </briefdescription>
     <detaileddescription>
-<para>Example: <computeroutput>protected void Page_Load(object sender, EventArgs e){</computeroutput> <computeroutput> <ref refid="classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b" kindref="member">IronPdf.AspxToPdf.RenderThisPageAsPDF()</ref>; </computeroutput> <computeroutput> } </computeroutput> </para>    </detaileddescription>
+<para>Example:</para><para><computeroutput>protected void Page_Load(object sender, EventArgs e){</computeroutput></para><para><computeroutput> <ref refid="classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b" kindref="member">IronPdf.AspxToPdf.RenderThisPageAsPDF()</ref>; </computeroutput></para><para><computeroutput> } </computeroutput> </para>    </detaileddescription>
     <location file="IronPdf/IronPdf/Api/AspxToPdf.cs" line="27" column="1" bodyfile="IronPdf/IronPdf/Api/AspxToPdf.cs" bodystart="26" bodyend="142"/>
     <listofallmembers>
       <member refid="classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4" prot="public" virt="non-virtual"><scope>IronPdf::AspxToPdf</scope><name>FileBehaviour</name></member>

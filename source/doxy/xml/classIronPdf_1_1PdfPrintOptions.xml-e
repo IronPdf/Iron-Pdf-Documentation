@@ -542,7 +542,7 @@
         <briefdescription>
 <para>Sets the header for every PDF page as HTML. This HTML is treated as a sperate HTML document, with its own javascript context and stylesheet. </para>        </briefdescription>
         <detaileddescription>
-<para>Using an HTML header replaces any text headers. Note: Ensure that MarginTop is set to a high enough value to render your HTML. Merge meta-data data into your html using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title} <parameterlist kind="param"><parameteritem>
+<para>Using an HTML header replaces any text headers.</para><para>Note: Ensure that MarginTop is set to a high enough value to render your HTML.</para><para>Merge meta-data data into your html using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title}</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>Html</parametername>
 </parameternamelist>
@@ -587,7 +587,7 @@
         <briefdescription>
 <para>Sets the header text for the PDF document. </para>        </briefdescription>
         <detaileddescription>
-<para>Merge meta-data data into your header using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title} <parameterlist kind="param"><parameteritem>
+<para>Merge meta-data data into your header using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title}</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>LeftText</parametername>
 </parameternamelist>
@@ -660,7 +660,7 @@
         <briefdescription>
 <para>Sets the footer text for the PDF document. </para>        </briefdescription>
         <detaileddescription>
-<para>Merge meta-data data into your footer using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title} <parameterlist kind="param"><parameteritem>
+<para>Merge meta-data data into your footer using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title}</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>LeftText</parametername>
 </parameternamelist>
@@ -713,7 +713,7 @@
         <briefdescription>
 <para>Sets the footer for every PDF page as HTML. This HTML is treated as a sperate HTML document, with its own javascript context and stylesheet. </para>        </briefdescription>
         <detaileddescription>
-<para>Using an HTML footer replaces any existing text footer. Note: Ensure that MarginBottom is set to a high enough value to render your HTML. Merge meta-data data into your html using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title} <parameterlist kind="param"><parameteritem>
+<para>Using an HTML footer replaces any existing text footer.</para><para>Note: Ensure that MarginBottom is set to a high enough value to render your HTML.</para><para>Merge meta-data data into your html using any of these placeholder strings: {page} {total-pages} {url} {date} {time} {html-title} {pdf-title}</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>Html</parametername>
 </parameternamelist>
@@ -793,7 +793,7 @@
     <briefdescription>
 <para>PDF output options for <ref refid="namespaceIronPdf" kindref="compound">IronPdf</ref>. Specifies options such as Paper-Size, Dpi, Headers and Footers. </para>    </briefdescription>
     <detaileddescription>
-<para>Example: <computeroutput> <ref refid="classIronPdf_1_1PdfPrintOptions" kindref="compound">PdfPrintOptions</ref> myOptions = new PdfPrintOptions() ){ GrayScale = true , Dpi=150, MarginTop = 15 , PaperKind = System.Drawing.Printing.PaperKind.Letter };</computeroutput> <computeroutput> myOptions.SetFooter( &quot;Page {page} of {total-pages}&quot;); </computeroutput> </para>    </detaileddescription>
+<para>Example:</para><para><computeroutput> <ref refid="classIronPdf_1_1PdfPrintOptions" kindref="compound">PdfPrintOptions</ref> myOptions = new PdfPrintOptions() ){ GrayScale = true , Dpi=150, MarginTop = 15 , PaperKind = System.Drawing.Printing.PaperKind.Letter };</computeroutput></para><para><computeroutput> myOptions.SetFooter( &quot;Page {page} of {total-pages}&quot;); </computeroutput> </para>    </detaileddescription>
     <collaborationgraph>
       <node id="7">
         <label>IronPdf.PdfPrintOptions</label>

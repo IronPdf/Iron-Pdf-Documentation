@@ -89,7 +89,7 @@
         <briefdescription>
 <para>Renders the URL as PDF binary data. </para>        </briefdescription>
         <detaileddescription>
-<para>Note: Custom WebClient and PDFPrinting options can be set optionally. Example: <computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput> <computeroutput> Uri myUri = new Uri(&quot;http://www.example.com&quot;);</computeroutput> <computeroutput> myHtmlToPdf.RenderUrlAsPdf(myUri).SaveAs("Path\File.Pdf");</computeroutput> <computeroutput> </computeroutput>  <parameterlist kind="param"><parameteritem>
+<para>Note: Custom WebClient and PDFPrinting options can be set optionally.</para><para>Example:</para><para><computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> Uri myUri = new Uri(&quot;http://www.example.com&quot;);</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderUrlAsPdf(myUri).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>Url</parametername>
 </parameternamelist>
@@ -135,7 +135,7 @@
         <briefdescription>
 <para>Renders the URL as PDF binary data. </para>        </briefdescription>
         <detaileddescription>
-<para>Note: Custom WebClient and PDFPrinting options can be set optionally. Example: <computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput> <computeroutput> myHtmlToPdf.RenderUrlAsPdf(&quot;http://www.example.com&quot;).SaveAs("Path\File.Pdf");</computeroutput> <computeroutput> </computeroutput>  <parameterlist kind="param"><parameteritem>
+<para>Note: Custom WebClient and PDFPrinting options can be set optionally.</para><para>Example:</para><para><computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderUrlAsPdf(&quot;http://www.example.com&quot;).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>Url</parametername>
 </parameternamelist>
@@ -181,7 +181,7 @@
         <briefdescription>
 <para>Creates a PDF file from an HTML string, and returns it as an <ref refid="classIronPdf_1_1PdfResource" kindref="compound">IronPdf.PdfResource</ref> </para>        </briefdescription>
         <detaileddescription>
-<para>Note: Custom WebClient and PDFPrinting options can be set optionally. Example: <computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput> <computeroutput> myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs("Path\File.Pdf");</computeroutput> <computeroutput> </computeroutput>  <parameterlist kind="param"><parameteritem>
+<para>Note: Custom WebClient and PDFPrinting options can be set optionally.</para><para>Example:</para><para><computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>Html</parametername>
 </parameternamelist>
@@ -265,7 +265,7 @@
     <briefdescription>
 <para><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf</ref> allows you to create PDF files from any web page or HTML Snippet </para>    </briefdescription>
     <detaileddescription>
-<para>Example: <computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput> <computeroutput> myHtmlToPdf.PrintOptions.Title = &quot;A Great PDF Title&quot;;</computeroutput> <computeroutput> myHtmlToPdf.PrintOptions.EnableJavaScript = true;</computeroutput> <computeroutput> myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs("Path\File.Pdf");</computeroutput> <computeroutput> </computeroutput> </para>    </detaileddescription>
+<para>Example:</para><para><computeroutput><ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">HtmlToPdf</ref> myHtmlToPdf = new <ref refid="classIronPdf_1_1HtmlToPdf" kindref="compound">IronPdf.HtmlToPdf()</ref>;</computeroutput></para><para><computeroutput> myHtmlToPdf.PrintOptions.Title = &quot;A Great PDF Title&quot;;</computeroutput></para><para><computeroutput> myHtmlToPdf.PrintOptions.EnableJavaScript = true;</computeroutput></para><para><computeroutput> myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs("Path\File.Pdf");</computeroutput></para><para><computeroutput> </computeroutput> </para>    </detaileddescription>
     <collaborationgraph>
       <node id="4">
         <label>IronPdf.PdfPrintOptions</label>
