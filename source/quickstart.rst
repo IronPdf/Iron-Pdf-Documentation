@@ -3,7 +3,7 @@ QuickStart
 ==========
 
 
-Get IronPdf Installed in your project in 60 seconds.
+Get IronPdf Installed
 ----------------------------------------------------
 
 **Using Nuget Package manager in Visual Studio**
@@ -24,17 +24,17 @@ Basic Usage
 HTML String to Pdf
 ^^^^^^^^^^^^^^^^^^
 
-.. code-block:: c#
+.. code-block:: csharp
 
 	using IronPdf;
 
 	HtmlToPdf HtmlToPdf = new IronPdf.HtmlToPdf();
-	HtmlToPdf.RenderHtmlAsPdf(@“<p>html</p>“).SaveAs(@“Path\File.Pdf”);
+	HtmlToPdf.RenderHtmlAsPdf("<p>html</p>"").SaveAs(@"Path\File.Pdf");
 	
 
 Url to Pdf
 ^^^^^^^^^^^
-.. code-block:: c#
+.. code-block:: csharp
 
 	using IronPdf;
 
@@ -44,10 +44,10 @@ Url to Pdf
 
 Advanced usage - you can also pass a System.Net.WebClient to RenderUrlAsPdf. 
 
-.. code-block:: c#
+.. code-block:: csharp
 
          //...
-         HtmlToPdf.RenderUrlAsPdf(@“http://myurl.com”, myWebClient ).SaveAs("File.Pdf");
+         HtmlToPdf.RenderUrlAsPdf("http://ironpdf.com", myWebClient ).SaveAs("File.Pdf");
 
  This allows you to set login credentials, proxy settings, special headers, cookies - to log  in to protected / secure web pages.
 
@@ -55,7 +55,7 @@ Advanced usage - you can also pass a System.Net.WebClient to RenderUrlAsPdf. 
 Pdf Settings
 ^^^^^^^^^^^^
 
-.. code-block:: c#
+.. code-block:: csharp
 
 		using IronPdf;
 
@@ -88,15 +88,15 @@ Changes any ASPX web page to automatically render as a Pdf document instead of h
 		  AspxToPdf.RenderThisPageAsPDF();      
 		  }
 
-AspxToPdf with Advanced Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**AspxToPdf with Advanced Settings**
+
 
 .. code-block:: c#
 
       IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, "MyPdfDownload.pdf", new PdfPrintOptions(){ Dpi = 300});
 
 
-Outputs
+Pdf Outputs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 HtmlToPdf.RenderUrlAsPdf and  HtmlToPdf.RenderHtmlAsPdf return an instance of the
@@ -104,4 +104,13 @@ IronPdf.PdfResource class.
 
 In the above examples - we directly save to file.  
 
-Its is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[]) or Memory Stream  using the *Stream* and *BinaryData* properties.
+It is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[]) or Memory Stream using the *Stream* and *BinaryData* properties of PdfResource.
+
+.. code-block:: c#
+
+	using IronPdf;
+	HtmlToPdf HtmlToPdf = new IronPdf.HtmlToPdf();
+	//..
+	System.IO.MemoryStream stream = HtmlToPdf.RenderHtmlAsPdf("<p>html</p>"").Stream;
+	//or
+	byte[] data = HtmlToPdf.RenderHtmlAsPdf("<p>html</p>"").BinaryData;

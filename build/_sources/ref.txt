@@ -14,7 +14,7 @@ It can work from HTMl string or fetch URL (with all of their supporting assets).
 
 A custom System.Net.WebCient can optionally be assign to manage requests to render webpages with special security provisions.
 
-Examples:
+Examples
 ---------------
 
 This should help you get started.  IntelliSense should take it from there! 
@@ -145,7 +145,7 @@ For AspxToPdf your PdfPrintOptions are added as a final additional argument in t
      IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, “FileName.pdf”, PrintOptions);
  
 
-Full Object Reference for IronPdf.AspxToPdf
+IronPdf.AspxToPdf Reference
 ------------------------------------------------
 
  .. doxygenclass:: IronPdf::PdfPrintOptions

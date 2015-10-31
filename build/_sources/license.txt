@@ -100,8 +100,7 @@ IronPDF uses this library fully within the LGPL3 license agreement - and respect
 
 Which means that you may use libwkhtmltox and IronPDF in commercial applications without being open source your self.
   
-**PDFClown  **
-
+**PDFClown**
 
 PDFClown is also an LGLP project, and is incorporated into IronPdf as on of our page-stamping gambits.  We love this library - and are awed at how smart Stefano Chizzolini is to simultaneously develop for Java and .Net
 
