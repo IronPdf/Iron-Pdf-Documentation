@@ -43,7 +43,7 @@ IRONPDF.COM hereby grants you a non-exclusive license to the IRONPDF Software Li
 
 5)Department License - Grants the use of the Software by up to TWELVE software developers. The software may be deployed within up-to TWENTY-FIVE web-applications or applications, for the INTERNAL use of up to TWO end user organizations. The software may also be used within to to TWENTY-FIVE website subdomains, where PDF generation is not a primary business function.
 
-5)Enterrpise License - Grants the use of the Software by up to SIXTY software developers. The software may be deployed within up-to ONE HUNDRED web-applications or applications, for the INTERNAL use of up to FIVE end user organizations. The software may also be used within to to ONE HUNDRED website subdomains, , where PDF generation is not a primary business function. For more than SIXTY software developers, multiple licenses should be purchased.
+5)Enterprise License - Grants the use of the Software by up to SIXTY software developers. The software may be deployed within up-to ONE HUNDRED web-applications or applications, for the INTERNAL use of up to FIVE end user organizations. The software may also be used within to to ONE HUNDRED website subdomains, , where PDF generation is not a primary business function. For more than SIXTY software developers, multiple licenses should be purchased.
 
 6)OEM Redistribution License - Grants the right to distribute the Software (without royalty) as part of ONE distinct packaged commercial product, provided that your application is not a software development system or tool, nor a PDF gereration application in its self. IRONPDF.COM shall at all times retain ownership of the Software and all subsequent copies.
 

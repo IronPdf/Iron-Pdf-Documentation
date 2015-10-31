@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="AspxToPdf_8cs" kind="file" language="C#">
+    <compoundname>AspxToPdf.cs</compoundname>
+    <innerclass refid="classIronPdf_1_1AspxToPdf" prot="public">IronPdf::AspxToPdf</innerclass>
+    <innernamespace refid="namespaceIronPdf">IronPdf</innernamespace>
+    <innernamespace refid="namespaceSystem">System</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1IO">System::IO</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1Text_1_1RegularExpressions">System::Text::RegularExpressions</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1Web">System::Web</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1Web_1_1UI">System::Web::UI</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="IronPdf/IronPdf/Api/AspxToPdf.cs"/>
+  </compounddef>
+</doxygen>

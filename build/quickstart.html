@@ -116,12 +116,12 @@ HtmlToPdf.RenderUrlAsPdf(@“http://myurl.com&quot;).SaveAs(@&quot;Path\File.Pdf
 <h3>Pdf Outputs<a class="headerlink" href="#pdf-outputs" title="Permalink to this headline">¶</a></h3>
 <p>HtmlToPdf.RenderUrlAsPdf and  HtmlToPdf.RenderHtmlAsPdf return an instance of the
 IronPdf.PdfResource class.</p>
-<p>In the above examples - we directly save to file.</p>
-<p>It is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[]) or Memory Stream using the <em>Stream</em> and <em>BinaryData</em> properties of PdfResource.</p>
+<p>In the above examples, we directly save each PDF as a file.</p>
+<p>It is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[])the <em>Stream</em> and <em>BinaryData</em> properties of PdfResource respectively.</p>
 <div class="highlight-c#"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
 <span class="n">HtmlToPdf</span> <span class="n">HtmlToPdf</span> <span class="p">=</span> <span class="k">new</span> <span class="n">IronPdf</span><span class="p">.</span><span class="n">HtmlToPdf</span><span class="p">();</span>
 <span class="c1">//..</span>
-<span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">MemoryStream</span> <span class="n">stream</span> <span class="p">=</span> <span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">RenderHtmlAsPdf</span><span class="p">(</span><span class="s">&quot;&lt;p&gt;html&lt;/p&gt;&quot;&quot;).Stream;</span>
+<span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">MemoryStream</span> <span class="n">stream</span> <span class="p">=</span> <span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">RenderHtmlAsPdf</span><span class="p">(</span><span class="s">&quot;&lt;p&gt;html&lt;/p&gt;).Stream;</span>
 <span class="c1">//or</span>
 <span class="kt">byte</span><span class="p">[]</span> <span class="n">data</span> <span class="p">=</span> <span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">RenderHtmlAsPdf</span><span class="p">(</span><span class="s">&quot;&lt;p&gt;html&lt;/p&gt;&quot;&quot;).BinaryData;</span>
 </pre></div>

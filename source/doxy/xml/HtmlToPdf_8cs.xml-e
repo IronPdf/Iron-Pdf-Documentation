@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="HtmlToPdf_8cs" kind="file" language="C#">
+    <compoundname>HtmlToPdf.cs</compoundname>
+    <innerclass refid="classIronPdf_1_1PdfResource" prot="public">IronPdf::PdfResource</innerclass>
+    <innerclass refid="classIronPdf_1_1HtmlToPdf" prot="public">IronPdf::HtmlToPdf</innerclass>
+    <innernamespace refid="namespaceIronPdf">IronPdf</innernamespace>
+    <innernamespace refid="namespaceIronPdf_1_1pdfclown_1_1documents">IronPdf::pdfclown::documents</innernamespace>
+    <innernamespace refid="namespaceIronPdf_1_1pdfclown_1_1documents_1_1contents_1_1xObjects">IronPdf::pdfclown::documents::contents::xObjects</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1Net">System::Net</innernamespace>
+    <innernamespace refid="namespaceSystem_1_1Reflection">System::Reflection</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="IronPdf/IronPdf/Api/HtmlToPdf.cs"/>
+  </compounddef>
+</doxygen>

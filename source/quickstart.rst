@@ -102,15 +102,15 @@ Pdf Outputs
 HtmlToPdf.RenderUrlAsPdf and  HtmlToPdf.RenderHtmlAsPdf return an instance of the
 IronPdf.PdfResource class.
 
-In the above examples - we directly save to file.  
+In the above examples, we directly save each PDF as a file.
 
-It is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[]) or Memory Stream using the *Stream* and *BinaryData* properties of PdfResource.
+It is also possible to get the Pdf document as a System.IO.MemoryStream or a byte array (byte[])the *Stream* and *BinaryData* properties of PdfResource respectively.
 
 .. code-block:: c#
 
 	using IronPdf;
 	HtmlToPdf HtmlToPdf = new IronPdf.HtmlToPdf();
 	//..
-	System.IO.MemoryStream stream = HtmlToPdf.RenderHtmlAsPdf("<p>html</p>"").Stream;
+	System.IO.MemoryStream stream = HtmlToPdf.RenderHtmlAsPdf("<p>html</p>).Stream;
 	//or
 	byte[] data = HtmlToPdf.RenderHtmlAsPdf("<p>html</p>"").BinaryData;

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.10">
+  <compound refid="classIronPdf_1_1AspxToPdf" kind="class"><name>IronPdf::AspxToPdf</name>
+    <member refid="classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4" kind="enum"><name>FileBehaviour</name></member>
+    <member refid="classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4ae9cb217697088a98b1937d111d936281" kind="enumvalue"><name>Attachment</name></member>
+    <member refid="classIronPdf_1_1AspxToPdf_1a02111709c73b963e06d0ca54e0af41d4a9a7001f8b8a35abfed6edf97bf01fb0a" kind="enumvalue"><name>InBrowser</name></member>
+    <member refid="classIronPdf_1_1AspxToPdf_1a598fa0b7f994d03f7b2baf1458d97f5b" kind="function"><name>RenderThisPageAsPDF</name></member>
+    <member refid="classIronPdf_1_1AspxToPdf_1a4101d8ff3e569ce59a8cd2c97979b2ba" kind="function"><name>GetADecentFileName</name></member>
+    <member refid="classIronPdf_1_1AspxToPdf_1a23e6a7d57cc9311806813ed3f62df15f" kind="function"><name>GetTitle</name></member>
+  </compound>
+  <compound refid="classIronPdf_1_1HtmlToPdf" kind="class"><name>IronPdf::HtmlToPdf</name>
+    <member refid="classIronPdf_1_1HtmlToPdf_1a19438f0f6a6cc9d092a393c6205cef35" kind="variable"><name>APPNAMES</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1a2459c190a13a9bafb6dda42ca375818f" kind="variable"><name>PrintOptions</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1a8c811e7ad1969c17b628666aa7bb34ef" kind="function"><name>HtmlToPdf</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1add42c2ae954d5d4249e268481e0d6554" kind="function"><name>HtmlToPdf</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1ace652aebd43df37f768dc74b88b6ef24" kind="function"><name>RenderUrlAsPdf</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1a2c139e484a7debb76d4d573d2674cd3e" kind="function"><name>RenderUrlAsPdf</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1ab8dc3c8a7e81404b81fa5a750b18054f" kind="function"><name>RenderHtmlAsPdf</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1afe2099010d34160789f2fcfa537c584d" kind="function"><name>DefaultPrintOptions</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1a51ff344f1d1d3ec9f48fd92db065af05" kind="function"><name>MakePDFResource</name></member>
+    <member refid="classIronPdf_1_1HtmlToPdf_1ad8f5a88266aecba23c5b7e515e8b6519" kind="function"><name>Mark</name></member>
+  </compound>
+  <compound refid="classIronPdf_1_1PdfPrintOptions" kind="class"><name>IronPdf::PdfPrintOptions</name>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a76bd163fe64536381976b98ea9d547a7" kind="enum"><name>PaperOrientation</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a76bd163fe64536381976b98ea9d547a7a1c7444be9626d149ab598fb79b639f96" kind="enumvalue"><name>Portrait</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a76bd163fe64536381976b98ea9d547a7a815dff01257e5ef182b25d4c1ef0a7a0" kind="enumvalue"><name>Landscape</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a01ef6457225bbf877b37bca0f1656556" kind="variable"><name>LicenseKey</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a8afe7f71a832b9110bd772d13f034fb0" kind="variable"><name>InputEncoding</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1add04ee907bcf218b04dd3cc06ef6c953" kind="variable"><name>Zoom</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a8d97a61bcd53456642647a7383a065af" kind="variable"><name>Dpi</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1acc4d5ad83ccc1aaff4a44951bb0f99ef" kind="variable"><name>GrayScale</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1ace393247a355fe3e456ea187a3410e67" kind="variable"><name>JpegQuality</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1adb220feb52ebf309986813af1ba172f0" kind="variable"><name>MarginLeft</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a1037661e065799bae753afd955322438" kind="variable"><name>MarginBottom</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1ab1541cfde27c72f3ab9a8bb369d7cfca" kind="variable"><name>MarginTop</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a5d0d1ec6ae548d1d17ea919406d2029d" kind="variable"><name>MarginRight</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a91270ade1f59f757e0d2e41466680549" kind="variable"><name>PaperKind</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a9296a2e5eac7c2b24a89838dfe7a24cd" kind="variable"><name>PDFPaperOrientation</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1acb108f1f8252748f2f4d5995098dd2a9" kind="variable"><name>PrintHtmlBackgrounds</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a7912f495bcd31a7bb35d12beb9e95ad3" kind="variable"><name>UseScreenCSSMediaType</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a5d5b8bfe08bc64aff428e863bf2dbf18" kind="variable"><name>EnableJavaScript</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1aa8e13a687e6c113dad9fe9f0a490aab7" kind="variable"><name>OutputForms</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1ad07dfd50a83bdc9a3c6c9712e7626266" kind="variable"><name>Title</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a8b63ff1272cf0de991188fb0c9cb75de" kind="variable"><name>FitToPaperWidth</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a7a84a418d1c2579a9350504bebcfe6cd" kind="variable"><name>RenderDelay</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a001169eb707c2c78a84d3a83f2933da9" kind="variable"><name>FirstPageNumber</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a288213f5ec757d9ab17fc37b13864a4b" kind="variable"><name>HeaderFont</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1ab8622632f5a3beba0b3f7c8ba3534538" kind="variable"><name>FooterFont</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a98beb0fe4f4bd688f1049cff32bd81e3" kind="variable"><name>CustomPaperWidth</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a65b973367bdcb16f4c6126769f9a1bb2" kind="variable"><name>CustomPaperHeight</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a6f708b4e98c8bf9d6c17cdab81bca22e" kind="variable"><name>HeaderLeftText</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a6647b5200f840bc1ae76e62bce25e596" kind="variable"><name>HeaderCenterText</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1ae281ca6b6f591629ef84ecf469da95a6" kind="variable"><name>HeaderRightText</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1abbac09f44daa20c8311ebcc75bfd0f8e" kind="variable"><name>HeaderHTML</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a31d84c785e5db6151579b296d183e641" kind="variable"><name>HeaderLineSeperator</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a26e1cab0d697698ee72e503293869ada" kind="variable"><name>FooterLeftText</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1afac809486d54512d375c3b9ad4053df7" kind="variable"><name>FooterCenterText</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1aa1c7791aea89aa4256377a5488eb04e5" kind="variable"><name>FooterRightText</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1adf239c5071b0b92a78f40626428285e9" kind="variable"><name>FooterHTML</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a9d606d3ba59fb800525632e337eee37b" kind="variable"><name>FooterLineSeperator</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a44eef2926376d8cd2cda0671768bc81c" kind="function"><name>SetCustomPaperSize</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1aedb4e1de271d5c1f5124447ae8eb4461" kind="function"><name>SetHeaderAsHtml</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a5f5b6e6d4f9c7d013dfce3ada8aa0e13" kind="function"><name>SetHeader</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a5374e66aa7103f1f3b9f1a580965ae6c" kind="function"><name>SetFooter</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a78b8cb6793c4181102ad40edfc9f50ea" kind="function"><name>SetFooterAsHtml</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1aadc063f4f3fe7d7cd70d4cf6c3b4569b" kind="function"><name>IReplace</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a6f0dd31f192e97ad7bf48f70f33fc7b6" kind="function"><name>header_footer_mailmerge</name></member>
+    <member refid="classIronPdf_1_1PdfPrintOptions_1a9da75f49481634ae3b7b6ad030e891f0" kind="function"><name>header_footer_html_mailmerge</name></member>
+  </compound>
+  <compound refid="classIronPdf_1_1PdfResource" kind="class"><name>IronPdf::PdfResource</name>
+    <member refid="classIronPdf_1_1PdfResource_1ac01cad5b3fd8d2da0339c9fc845fe09a" kind="variable"><name>_data</name></member>
+    <member refid="classIronPdf_1_1PdfResource_1a68fa4c05bf4ac530c2e7916c7fa7b788" kind="property"><name>BinaryData</name></member>
+    <member refid="classIronPdf_1_1PdfResource_1a0c1bc800af086fa6916c57e4bf72fd79" kind="property"><name>Stream</name></member>
+    <member refid="classIronPdf_1_1PdfResource_1accffbb005909028ecdbc1ce689707744" kind="function"><name>PdfResource</name></member>
+    <member refid="classIronPdf_1_1PdfResource_1aafaa3c00c9c184b75df8b8b4f9651ab6" kind="function"><name>SaveAs</name></member>
+  </compound>
+  <compound refid="namespaceIronPdf" kind="namespace"><name>IronPdf</name>
+  </compound>
+  <compound refid="namespaceIronPdf_1_1pdfclown_1_1documents" kind="namespace"><name>IronPdf::pdfclown::documents</name>
+  </compound>
+  <compound refid="namespaceIronPdf_1_1pdfclown_1_1documents_1_1contents_1_1xObjects" kind="namespace"><name>IronPdf::pdfclown::documents::contents::xObjects</name>
+  </compound>
+  <compound refid="namespaceSystem" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Drawing_1_1Printing" kind="namespace"><name>System::Drawing::Printing</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Drawing_1_1Text" kind="namespace"><name>System::Drawing::Text</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1IO" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Net" kind="namespace"><name>System::Net</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Text_1_1RegularExpressions" kind="namespace"><name>System::Text::RegularExpressions</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Web" kind="namespace"><name>System::Web</name>
+  </compound>
+  <compound refid="namespaceSystem_1_1Web_1_1UI" kind="namespace"><name>System::Web::UI</name>
+  </compound>
+  <compound refid="AspxToPdf_8cs" kind="file"><name>AspxToPdf.cs</name>
+  </compound>
+  <compound refid="PdfPrintOptions_8cs" kind="file"><name>PdfPrintOptions.cs</name>
+  </compound>
+  <compound refid="HtmlToPdf_8cs" kind="file"><name>HtmlToPdf.cs</name>
+  </compound>
+  <compound refid="dir_dcff0b6326ab2948e16cc436ea793288" kind="dir"><name>IronPdf/IronPdf/Api</name>
+  </compound>
+  <compound refid="dir_adb54b63bc756b5f7861eba1e1baa955" kind="dir"><name>IronPdf/IronPdf/Api/Config</name>
+  </compound>
+  <compound refid="dir_6024511c7cecb45aee5b583e65f673a5" kind="dir"><name>IronPdf/IronPdf</name>
+  </compound>
+  <compound refid="dir_b48535392eeb4a3d3162dac1f2975902" kind="dir"><name>IronPdf</name>
+  </compound>
+</doxygenindex>
