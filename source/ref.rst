@@ -15,11 +15,11 @@ It can work from HTMl string or fetch URL (with all of their supporting assets).
 A custom System.Net.WebCient can optionally be assign to manage requests to render webpages with special security provisions.
 
 Examples:
-^^^^^^^^^ 
+---------------
 
 This should help you get started.  IntelliSense should take it from there! 
 
-.. code-block:: c#
+.. code-block:: csharp
 
 	using IronPdf;
 
@@ -41,8 +41,8 @@ This should help you get started.  IntelliSense should take it from there!
 You can also save the result as a Stream or Byte array for advanced usage.  *See IronPdf.PdfResource*.
 
 
-Full Object Reference for IronPdf.HtmlToPdf
-============================================
+IronPdf.HtmlToPdf Reference
+------------------------------------------------------------
 
 
 .. doxygenclass:: IronPdf::HtmlToPdf
@@ -59,13 +59,13 @@ This is simply achieved by adding AspxToPdf in your ASPX page code-behind.   *No
 Just call **IronPdf.AspxToPdf.RenderThisPageAsPdf()** in your of your ASPX Form onLoad event.  
 
 
-Examples:
-^^^^^^^^^ 
+Examples
+------------------------------
 
-Basic Example
-****************
+**Basic Example**
 
-.. code-block:: c#
+
+.. code-block:: csharp
 
      private void Form1_Load(object sender, EventArgs e)
           {
@@ -74,8 +74,10 @@ Basic Example
            }
 
 
-Advanced Example
-*****************
+**Advanced Example**
+
+.. code-block:: csharp
+
      using IronPdf;
 
      private void Form1_Load(object sender, EventArgs e)
@@ -91,8 +93,8 @@ Advanced Example
 
 
  
-Full Object Reference for IronPdf.AspxToPdf
-===================================================
+IronPdf.AspxToPdf Reference
+------------------------------
 
 .. doxygenclass:: IronPdf::AspxToPdf
    :members:
@@ -111,20 +113,20 @@ PdfPrintOptions is a class used to fine-tune the behavior of Pdf rendering by an
 
 PdfPrintOptions covers almost every pdf setting we can imagine, including editable PDF forms, javascript, custom headers and footers with *{mail-merge}* fields, paper sizes including custom sizes, margins …the whole kitchen sink. 
 
-Using PdfPrintOptions with HtmlToPdf
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Examples with HtmlToPdf
+------------------------------------------------
 To make coding easier - there are 2 ways you can do set the PdfPrintOptions:
 
 1. Construct HtmlToPdf with a PdfPrintOptions parameter.  E.g.
 
-.. code-block:: c#
+.. code-block:: csharp
 
      HtmlToPdf myPdfMaker = new  HtmlToPdf(PdfPrintOptions);
 
 2. HtmlToPdf has a property called PrintOptions which is an instance of PdfPrintOptions. This allows for on the fly settings changes.  E.g.
 
 
-.. code-block:: c#
+.. code-block:: csharp
 
      HtmlToPdf myPdfMaker = new IronPdf.HtmlToPdf();
      myPdfMaker.PrintOptions.GrayScale = true;
@@ -132,19 +134,19 @@ To make coding easier - there are 2 ways you can do set the PdfPrintOptions:
      myPdfMaker.PrintOptions.Zoom = 200;  
      myPdfMaker.RenderHtmlAsPdf(@“<p>hello world</p>“).SaveAs(“test2.pdf”);
 
-Using PdfPrintOptions with AspxToPdf
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example with AspxToPdf
+------------------------------------------------
 For AspxToPdf your PdfPrintOptions are added as a final additional argument in the RenderThisPageAsPDF function call.  
 
 
-.. code-block:: c#
+.. code-block:: csharp
 
      IronPdf.PdfPrintOptions PrintOptions = new PrintOptions(){ Dpi = 300 };
      IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, “FileName.pdf”, PrintOptions);
  
 
 Full Object Reference for IronPdf.AspxToPdf
-==============================================
+------------------------------------------------
 
  .. doxygenclass:: IronPdf::PdfPrintOptions
    :members:
@@ -162,10 +164,10 @@ PdfResource can automatically save a file for you, but it can also return an Byt
 
 This is useful if you want to post-process you pdf, save to a database, or do something innovative we haven't even thought of yet!    
 
-Using IronPdf.PdfResource
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Examples
+------------------------------------------------
 
-.. code-block:: c#
+.. code-block:: csharp
 
 	using IronPdf;
 
@@ -182,8 +184,8 @@ Using IronPdf.PdfResource
 
 
 
-Full Object Reference for IronPdf.PdfResource
-==================================================
+IronPdf.PdfResource Reference
+------------------------------------------------------------
 
 .. doxygenclass:: IronPdf::Pdfresource
    :members:   

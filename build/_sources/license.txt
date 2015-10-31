@@ -3,20 +3,24 @@ License Terms
 =================================================
 
 TLDR:
------
-This software isn't free for commercial usage or deployment .   Sorry, we work tirelessly to make the best software we can.
+----------
+This software isn't free for commercial usage or deployment .  Sorry, we work tirelessly to make the best software we can.
 
-IronPDF is free for the developer:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**IronPDF is free for the developer:**
 
-You can use this software on your local lachine, test server and staging server for free.
-If You are in a debugging evvironment - it will all work like magic.  You can show your boss, client and all is well.  if you are going to deploy to  a server or machine in production - a watermark will show on your PDFs.
 
-I'm sure your clients and or empolyers will be happy to pay the license fees, as an alternative to the months of development it takes to build a PDF renderer of this quality.     
+You can use this software on your local developmet machine, test server and staging server for free.
 
-Licenses keys
----------------
-Licenses keys can be applied to App.Config, Machine.COnfig, Web.Config - or even in your PDFPrintOptions instances.  If you genuinely cant afford a license and are a good cause - please let us know.  We ware decent people.
+If You are in a debugging environment - it will all work, like magic.  You use this to evaluate our software, and show its value to you boss or clients.   
+
+To deploy to a server or machine in production - a watermark will show on your PDFs until you get a license key.
+
+ We hope they will undetstand the bennefit of paying a small license fee, as an alternative to the months of development it takes to build a PDF renderer of this quality.     
+
+
+**License keys**
+ 
+License keys can be applied to App.Config, Machine.COnfig, Web.Config - or even in your PDFPrintOptions instances.  If you genuinely cant afford a license and are a good cause - please let us know.  We ware decent people.
 
 You can learn more, and get licensed http://localhost/iron/license
 
@@ -51,7 +55,7 @@ LIMITATION OF LIABILITY. THIS SOFTWARE IS PROVIDED "AS IS," WITHOUT A WARRANTY O
 
 MISCELLANEOUS This software is not designed or intended for use in on-line control of aircraft, air traffic, aircraft navigation or aircraft communications; or in the design, construction, operation or maintenance of any nuclear facility. Licensee represents and warrants that it will not use or redistribute the Software for such purposes.
 
-Acknowledgements and Sub-Licenses
+Acknowledgements 
 ---------------------------------
 
 This software builds on the shoulders of giants.
@@ -60,28 +64,28 @@ Our code product does make use of some great open source  projects - and we are 
 
 It has become blasé industry policy to not give credit where it is due.  We appreciate your open source projects - and appreciate even more that you have allowed us to use them in such a way that does not stop the sale or sub licensing of commercial software,  We honestly invest to day it back.  To donate to each of these projects - wither in feedback, code, cash or developer love.  Where we cant pay it back - we will try and pay it forwards!  
 
-Microsoft
-^^^^^^^^^
+**Microsoft**
+
 
 
 We’ll be honest - we didn't always love Microsoft.  But they deserve a special praise on 2 counts.
 
-  Visual Studio 2015 Community Edition
-************************************
+  **Visual Studio 2015 Community Edition**
+ 
 
 
 Quite possible the best piece of IDE software ever written.  No more need for JetBrains - everything and enterprise develop needs (including GitHub team workflow is incorporated).  now its Free!    Than your Microsoft - you are now officially cool!  https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx   Open Sourcing of the .Net Framework In October 2014 - Microsoft open sourced the .Net framework.  This will (already has) had massive implications for the future of C# as a language - and the common dream that we could have 1 programing framework for any task, on any device on any CPU architecture.  
 
 http://blogs.msdn.com/b/dotnet/archive/2014/11/12/net-core-is-open-source.aspx  
 
-The Open-Souring of Roslyn
-***************************
+**The Open-Souring of Roslyn**
+
 
 The open sourcing of Roslyn,  the core MSIL compiler makes for exciting future - such that logic from languages such as PHP, Python, Javascript, Ruby, C++, C, C+ and Java may one day be interoperable.   We honestly believe .Net may succeed Java as the future of universal programming. 
 
 
-libwkhtmltox
-^^^^^^^^^^^^
+**libwkhtmltox**
+
 This LGLP project is incorporated into IronPDF as one of its HTML rendering gambits in an unmodified format.   It is great work, and provided inspiration for further development. 
 
 IronPDF uses this library fully within the LGPL3 license agreement - and respect the authors great work.
@@ -90,14 +94,14 @@ IronPDF uses this library fully within the LGPL3 license agreement - and respect
       *Copyright 2010 wkhtmltopdf authors wkhtmltopdf is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.wkhtmltopdf is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. To see the full text of that sublicense license please go to: http://www.gnu.org/licenses/*
 
 
-To Cite TLDR Legal
-******************
+*To Cite TLDR Legal*
+
       [The GNU Lesser General Public v3] license is mainly applied to libraries. You may copy, distribute and modify the software provided that modifications are described and licensed for free under LGPL. Derivatives works (including modifications or anything statically linked to the library) can only be redistributed under LGPL, but applications that use the library don't have to be.
 
 Which means that you may use libwkhtmltox and IronPDF in commercial applications without being open source your self.
   
-PDFClown  
-^^^^^^^^
+**PDFClown  **
+
 
 PDFClown is also an LGLP project, and is incorporated into IronPdf as on of our page-stamping gambits.  We love this library - and are awed at how smart Stefano Chizzolini is to simultaneously develop for Java and .Net
 
@@ -110,24 +114,22 @@ PDFClown is also an LGLP project, and is incorporated into IronPdf as on of our 
 
 
 
-To Cite TLDR Legal:
-*******************
+*To Cite TLDR Legal:*
+
      This license is mainly applied to libraries. You may copy, distribute and modify the software provided that modifications are described and licensed for free under LGPL. Derivatives works (including modifications or anything statically linked to the library) can only be redistributed under LGPL, but applications that use the library don't have to be.
 
 Which means that you may use PDFClown and IronPDF in commercial applications without being open source your self.
 
-Special Thanks  
-^^^^^^^^^^^^^^^
+**Special Thanks**
+
  Thanks should also go to Slava Kolobaev and his work on the Pechkin PDF Interop for C# Project.
  We were inspired by his clean C# architecture - and although out library does not use conventional Interop - he deserves a big thanks for sharing his design under CC Attribution license.
 
 We wish we were as good at API design as you are! 
 
- Adobe
-^^^^^ 
+ **Adobe**
+
 And Finally - Thank you adobe for opening up the PDF standard.  You have proven that openness in proprietary software is financially viable.
 
-Read about the Adobe Acrobat PDF open standard: 
-***********************************************
-https://acrobat.adobe.com/sea/en/products/about-adobe-pdf.html
+Read about the Adobe Acrobat PDF open standard:  https://acrobat.adobe.com/sea/en/products/about-adobe-pdf.html
  

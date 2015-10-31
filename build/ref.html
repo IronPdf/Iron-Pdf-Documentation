@@ -48,7 +48,7 @@
 <div class="section" id="examples">
 <h3>Examples:<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
 <p>This should help you get started.  IntelliSense should take it from there!</p>
-<div class="highlight-c#"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
 
 <span class="c1">//..</span>
 
@@ -67,8 +67,9 @@
 </pre></div>
 </div>
 <p>You can also save the result as a Stream or Byte array for advanced usage.  <em>See IronPdf.PdfResource</em>.</p>
-<div class="section" id="full-object-reference-for-ironpdf-htmltopdf">
-<h4>Full Object Reference for IronPdf.HtmlToPdf<a class="headerlink" href="#full-object-reference-for-ironpdf-htmltopdf" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="ironpdf-htmltopdf-reference">
+<h3>IronPdf.HtmlToPdf Reference<a class="headerlink" href="#ironpdf-htmltopdf-reference" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="_CPPv2N7IronPdf9HtmlToPdfE">
 <span id="IronPdf::HtmlToPdf"></span><span class="target" id="project0classIronPdf_1_1HtmlToPdf"></span><em class="property">class </em><code class="descclassname">IronPdf::</code><code class="descname">HtmlToPdf</code><a class="headerlink" href="#_CPPv2N7IronPdf9HtmlToPdfE" title="Permalink to this definition">¶</a></dt>
@@ -201,36 +202,39 @@
 
 </div>
 </div>
-</div>
 <div class="section" id="ironpdf-aspxtopdf">
 <h2>IronPdf.AspxToPdf<a class="headerlink" href="#ironpdf-aspxtopdf" title="Permalink to this headline">¶</a></h2>
 <p>AspxToPdf is a static class used to turn any ASPX web form into a PDF.  The look and feel remain the same - but the output becomes a PDF.</p>
 <p>This is simply achieved by adding AspxToPdf in your ASPX page code-behind.   <em>Normally this is a file named like Default.aspx.cs</em>.</p>
 <p>Just call <strong>IronPdf.AspxToPdf.RenderThisPageAsPdf()</strong> in your of your ASPX Form onLoad event.</p>
 <div class="section" id="id1">
-<h3>Examples:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-c#"><div class="highlight"><pre><span class="k">private</span> <span class="k">void</span> <span class="nf">Form1_Load</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+<h3>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p><strong>Basic Example</strong></p>
+<div class="highlight-csharp"><div class="highlight"><pre><span class="k">private</span> <span class="k">void</span> <span class="nf">Form1_Load</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
      <span class="p">{</span>
           <span class="c1">//..</span>
           <span class="n">IronPdf</span><span class="p">.</span><span class="n">AspxToPdf</span><span class="p">.</span><span class="n">RenderThisPageAsPDF</span><span class="p">();</span>
       <span class="p">}</span>
 </pre></div>
 </div>
-<blockquote>
-<div><p>using IronPdf;</p>
-<dl class="docutils">
-<dt>private void Form1_Load(object sender, EventArgs e)</dt>
-<dd><p class="first">{
-//..</p>
-<p>var PrintOptions = new PdfPrintOptions(){ Dpi=100 };
-PrintOptions.SetHeaderText(&#8220;{page} of {total-pages}”);</p>
-<p>AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, &#8220;FileName.pdf&#8221;, PrintOptions);</p>
-<p class="last">}</p>
-</dd>
-</dl>
-</div></blockquote>
-<div class="section" id="full-object-reference-for-ironpdf-aspxtopdf">
-<h4>Full Object Reference for IronPdf.AspxToPdf<a class="headerlink" href="#full-object-reference-for-ironpdf-aspxtopdf" title="Permalink to this headline">¶</a></h4>
+<p><strong>Advanced Example</strong></p>
+<div class="highlight-csharp"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="nf">Form1_Load</span><span class="p">(</span><span class="kt">object</span> <span class="n">sender</span><span class="p">,</span> <span class="n">EventArgs</span> <span class="n">e</span><span class="p">)</span>
+    <span class="p">{</span>
+    <span class="c1">//..</span>
+
+    <span class="kt">var</span> <span class="n">PrintOptions</span> <span class="p">=</span> <span class="k">new</span> <span class="n">PdfPrintOptions</span><span class="p">(){</span> <span class="n">Dpi</span><span class="p">=</span><span class="m">100</span> <span class="p">};</span>
+    <span class="n">PrintOptions</span><span class="p">.</span><span class="n">SetHeaderText</span><span class="p">(</span><span class="s">&quot;{page} of {total-pages}”);</span>
+
+    <span class="n">AspxToPdf</span><span class="p">.</span><span class="n">RenderThisPageAsPDF</span><span class="p">(</span><span class="n">AspxToPdf</span><span class="p">.</span><span class="n">FileBehaviour</span><span class="p">.</span><span class="n">Attachment</span><span class="p">,</span> <span class="s">&quot;FileName.pdf&quot;</span><span class="p">,</span> <span class="n">PrintOptions</span><span class="p">);</span>
+
+    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ironpdf-aspxtopdf-reference">
+<h3>IronPdf.AspxToPdf Reference<a class="headerlink" href="#ironpdf-aspxtopdf-reference" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="_CPPv2N7IronPdf9AspxToPdfE">
 <span id="IronPdf::AspxToPdf"></span><span class="target" id="project0classIronPdf_1_1AspxToPdf"></span><em class="property">class </em><code class="descclassname">IronPdf::</code><code class="descname">AspxToPdf</code><a class="headerlink" href="#_CPPv2N7IronPdf9AspxToPdfE" title="Permalink to this definition">¶</a></dt>
@@ -289,7 +293,6 @@ PrintOptions.SetHeaderText(&#8220;{page} of {total-pages}”);</p>
 
 </div>
 </div>
-</div>
 <div class="section" id="ironpdf-pdfprintoptions">
 <h2>IronPdf.PdfPrintOptions<a class="headerlink" href="#ironpdf-pdfprintoptions" title="Permalink to this headline">¶</a></h2>
 <p>PdfPrintOptions is a class used to fine-tune the behavior of Pdf rendering by any the following methods:</p>
@@ -299,19 +302,19 @@ PrintOptions.SetHeaderText(&#8220;{page} of {total-pages}”);</p>
 <li>IronPdf.HtmlToPdf.RenderHtmlAsPdf</li>
 </ul>
 <p>PdfPrintOptions covers almost every pdf setting we can imagine, including editable PDF forms, javascript, custom headers and footers with <em>{mail-merge}</em> fields, paper sizes including custom sizes, margins …the whole kitchen sink.</p>
-<div class="section" id="using-pdfprintoptions-with-htmltopdf">
-<h3>Using PdfPrintOptions with HtmlToPdf<a class="headerlink" href="#using-pdfprintoptions-with-htmltopdf" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="examples-with-htmltopdf">
+<h3>Examples with HtmlToPdf<a class="headerlink" href="#examples-with-htmltopdf" title="Permalink to this headline">¶</a></h3>
 <p>To make coding easier - there are 2 ways you can do set the PdfPrintOptions:</p>
 <ol class="arabic simple">
 <li>Construct HtmlToPdf with a PdfPrintOptions parameter.  E.g.</li>
 </ol>
-<div class="highlight-c#"><div class="highlight"><pre><span class="n">HtmlToPdf</span> <span class="n">myPdfMaker</span> <span class="p">=</span> <span class="k">new</span>  <span class="n">HtmlToPdf</span><span class="p">(</span><span class="n">PdfPrintOptions</span><span class="p">);</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span class="n">HtmlToPdf</span> <span class="n">myPdfMaker</span> <span class="p">=</span> <span class="k">new</span>  <span class="n">HtmlToPdf</span><span class="p">(</span><span class="n">PdfPrintOptions</span><span class="p">);</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li>HtmlToPdf has a property called PrintOptions which is an instance of PdfPrintOptions. This allows for on the fly settings changes.  E.g.</li>
 </ol>
-<div class="highlight-c#"><div class="highlight"><pre>HtmlToPdf myPdfMaker = new IronPdf.HtmlToPdf();
+<div class="highlight-csharp"><div class="highlight"><pre>HtmlToPdf myPdfMaker = new IronPdf.HtmlToPdf();
 myPdfMaker.PrintOptions.GrayScale = true;
 myPdfMaker.RenderHtmlAsPdf(&quot;&lt;p&gt;hello world&lt;/p&gt;&quot;).SaveAs(&quot;test.pdf&quot;);
 myPdfMaker.PrintOptions.Zoom = 200;
@@ -321,15 +324,16 @@ myPdfMaker.RenderHtmlAsPdf(@“&lt;p&gt;hello world&lt;/p&gt;“).SaveAs(“test
 </pre></div>
 </div>
 </div>
-<div class="section" id="using-pdfprintoptions-with-aspxtopdf">
-<h3>Using PdfPrintOptions with AspxToPdf<a class="headerlink" href="#using-pdfprintoptions-with-aspxtopdf" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="example-with-aspxtopdf">
+<h3>Example with AspxToPdf<a class="headerlink" href="#example-with-aspxtopdf" title="Permalink to this headline">¶</a></h3>
 <p>For AspxToPdf your PdfPrintOptions are added as a final additional argument in the RenderThisPageAsPDF function call.</p>
-<div class="highlight-c#"><div class="highlight"><pre>IronPdf.PdfPrintOptions PrintOptions = new PrintOptions(){ Dpi = 300 };
+<div class="highlight-csharp"><div class="highlight"><pre>IronPdf.PdfPrintOptions PrintOptions = new PrintOptions(){ Dpi = 300 };
 IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, “FileName.pdf”, PrintOptions);
 </pre></div>
 </div>
-<div class="section" id="id2">
-<h4>Full Object Reference for IronPdf.AspxToPdf<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="full-object-reference-for-ironpdf-aspxtopdf">
+<h3>Full Object Reference for IronPdf.AspxToPdf<a class="headerlink" href="#full-object-reference-for-ironpdf-aspxtopdf" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><dl class="class">
 <dt id="_CPPv2N7IronPdf15PdfPrintOptionsE">
@@ -595,16 +599,15 @@ IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, “Fil
 </div></blockquote>
 </div>
 </div>
-</div>
 <div class="section" id="ironpdf-pdfresource">
 <h2>IronPdf.PdfResource<a class="headerlink" href="#ironpdf-pdfresource" title="Permalink to this headline">¶</a></h2>
 <p>All of IronPdf.HtmlToPdf&#8217;s rendering methods output an instance of a IronPDF.PdfResource.</p>
 <p>We decided to work this way to make you job as a coder easier.</p>
 <p>PdfResource can automatically save a file for you, but it can also return an ByteArray (byte[]) as raw binary data or a System.IO.MemoryStream.</p>
 <p>This is useful if you want to post-process you pdf, save to a database, or do something innovative we haven&#8217;t even thought of yet!</p>
-<div class="section" id="using-ironpdf-pdfresource">
-<h3>Using IronPdf.PdfResource<a class="headerlink" href="#using-ironpdf-pdfresource" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-c#"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
+<div class="section" id="id2">
+<h3>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-csharp"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
 
 <span class="n">HtmlToPdf</span> <span class="n">myPdfMaker</span> <span class="p">=</span> <span class="k">new</span> <span class="n">IronPdf</span><span class="p">.</span><span class="n">HtmlToPdf</span><span class="p">();</span>
 <span class="n">PdfResource</span>  <span class="n">myPdf</span> <span class="p">=</span> <span class="n">myPdfMaker</span><span class="p">.</span><span class="n">RenderHtmlAsPdf</span><span class="p">(</span><span class="s">&quot;&lt;p&gt;hello world&lt;/p&gt;&quot;</span><span class="p">);</span>
@@ -618,12 +621,12 @@ IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, “Fil
 <span class="kt">byte</span><span class="p">[]</span> <span class="n">data</span> <span class="p">=</span> <span class="n">BinaryData</span><span class="p">;</span>
 </pre></div>
 </div>
-<div class="section" id="full-object-reference-for-ironpdf-pdfresource">
-<h4>Full Object Reference for IronPdf.PdfResource<a class="headerlink" href="#full-object-reference-for-ironpdf-pdfresource" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="ironpdf-pdfresource-reference">
+<h3>IronPdf.PdfResource Reference<a class="headerlink" href="#ironpdf-pdfresource-reference" title="Permalink to this headline">¶</a></h3>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">doxygenclass: Cannot find class &#8220;IronPdf::Pdfresource&#8221; in doxygen xml output for project &#8220;project0&#8221; from directory: ./doxy/xml/</p>
-</div>
 </div>
 </div>
 </div>
@@ -639,32 +642,24 @@ IronPdf.AspxToPdf.RenderThisPageAsPDF(AspxToPdf.FileBehaviour.Attachment, “Fil
   <ul>
 <li><a class="reference internal" href="#">Object Reference</a><ul>
 <li><a class="reference internal" href="#ironpdf-htmltopdf">IronPdf.HtmlToPdf</a><ul>
-<li><a class="reference internal" href="#examples">Examples:</a><ul>
-<li><a class="reference internal" href="#full-object-reference-for-ironpdf-htmltopdf">Full Object Reference for IronPdf.HtmlToPdf</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#examples">Examples:</a></li>
+<li><a class="reference internal" href="#ironpdf-htmltopdf-reference">IronPdf.HtmlToPdf Reference</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ironpdf-aspxtopdf">IronPdf.AspxToPdf</a><ul>
-<li><a class="reference internal" href="#id1">Examples:</a><ul>
-<li><a class="reference internal" href="#full-object-reference-for-ironpdf-aspxtopdf">Full Object Reference for IronPdf.AspxToPdf</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#id1">Examples</a></li>
+<li><a class="reference internal" href="#ironpdf-aspxtopdf-reference">IronPdf.AspxToPdf Reference</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ironpdf-pdfprintoptions">IronPdf.PdfPrintOptions</a><ul>
-<li><a class="reference internal" href="#using-pdfprintoptions-with-htmltopdf">Using PdfPrintOptions with HtmlToPdf</a></li>
-<li><a class="reference internal" href="#using-pdfprintoptions-with-aspxtopdf">Using PdfPrintOptions with AspxToPdf</a><ul>
-<li><a class="reference internal" href="#id2">Full Object Reference for IronPdf.AspxToPdf</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#examples-with-htmltopdf">Examples with HtmlToPdf</a></li>
+<li><a class="reference internal" href="#example-with-aspxtopdf">Example with AspxToPdf</a></li>
+<li><a class="reference internal" href="#full-object-reference-for-ironpdf-aspxtopdf">Full Object Reference for IronPdf.AspxToPdf</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ironpdf-pdfresource">IronPdf.PdfResource</a><ul>
-<li><a class="reference internal" href="#using-ironpdf-pdfresource">Using IronPdf.PdfResource</a><ul>
-<li><a class="reference internal" href="#full-object-reference-for-ironpdf-pdfresource">Full Object Reference for IronPdf.PdfResource</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#id2">Examples</a></li>
+<li><a class="reference internal" href="#ironpdf-pdfresource-reference">IronPdf.PdfResource Reference</a></li>
 </ul>
 </li>
 </ul>

@@ -51,21 +51,19 @@
 <p>The base requirements are .Net framework 4.0 on the windows platform.</p>
 <p>It works equally well in Forms Applications, Server Applications and Services, Web Applications, Secure Intranets, Console Apps, WPF Apps and MVC patterned websites.</p>
 <p>Read more at <a class="reference external" href="http://ironpdf.com">http://ironpdf.com</a></p>
-<div class="section" id="run-before-you-can-walk">
-<h2>Run before you can walk.<a class="headerlink" href="#run-before-you-can-walk" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="using-nuget-pack-installer">
-<h3>Using NuGet Pack Installer<a class="headerlink" href="#using-nuget-pack-installer" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="hello-world">
+<h2>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h2>
+<p><strong>NuGet Installer</strong></p>
 <div class="highlight-bash"><div class="highlight"><pre>PM&gt; Install-Package IronPdf
 </pre></div>
 </div>
-</div>
-<div class="section" id="line-hello-world">
-<h3>1 Line Hello World<a class="headerlink" href="#line-hello-world" title="Permalink to this headline">¶</a></h3>
+<p><strong>1 Line Hello World</strong></p>
 <div class="highlight-c#"><div class="highlight"><pre>new IronPdf.HtmlToPdf().RenderHtmlAsPdf(@“&lt;p&gt;hello world&lt;/p&gt;“).SaveAs(“test.pdf”);
 </pre></div>
 </div>
-<div class="section" id="why-ironpdf-rocks">
-<h4>Why IronPDF Rocks<a class="headerlink" href="#why-ironpdf-rocks" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 <p>IronPDF doesn&#8217;t try to render HTML.  It actually print up an instance of a real standard compliant web browser behind the scenes (without any additional software needing to be installed).</p>
 <p>The HTML gets rendered with complete accuracy - and in a vector format suitable for the highest standards of commercial printing.</p>
 <ul class="simple">
@@ -88,8 +86,6 @@
 </ul>
 </div>
 </div>
-</div>
-</div>
 
 
           </div>
@@ -100,14 +96,8 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">What is IronPdf ?</a><ul>
-<li><a class="reference internal" href="#run-before-you-can-walk">Run before you can walk.</a><ul>
-<li><a class="reference internal" href="#using-nuget-pack-installer">Using NuGet Pack Installer</a></li>
-<li><a class="reference internal" href="#line-hello-world">1 Line Hello World</a><ul>
-<li><a class="reference internal" href="#why-ironpdf-rocks">Why IronPDF Rocks</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a class="reference internal" href="#hello-world">Hello World</a></li>
+<li><a class="reference internal" href="#features">Features</a></li>
 </ul>
 </li>
 </ul>

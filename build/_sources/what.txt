@@ -20,18 +20,18 @@ It works equally well in Forms Applications, Server Applications and Services, W
 Read more at http://ironpdf.com
 
 
-Run before you can walk.
+Hello World
 ------------------------
 
- Using NuGet Pack Installer
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+ **NuGet Installer**
+
  
 .. code-block:: bash
 
      PM> Install-Package IronPdf
 
-  1 Line Hello World
-^^^^^^^^^^^^^^^^^^
+  **1 Line Hello World**
+ 
 
 .. code-block:: c#
 
@@ -39,8 +39,8 @@ Run before you can walk.
 
 
 
-Why IronPDF Rocks
-=================
+Features
+------------------------
 
   IronPDF doesn't try to render HTML.  It actually print up an instance of a real standard compliant web browser behind the scenes (without any additional software needing to be installed).  
 

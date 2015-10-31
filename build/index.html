@@ -40,7 +40,7 @@
   <div class="section" id="ironpdf-pdf-generation-library-documentation">
 <h1>IronPDF Pdf Generation Library Documentation<a class="headerlink" href="#ironpdf-pdf-generation-library-documentation" title="Permalink to this headline">¶</a></h1>
 <p>IronPDF is a commercial Grade PDF Generation library for the .Net platform, written in C#.</p>
-<p><a class="reference external" href="http://ironpdf.com">http://ironpdf.com</a></p>
+<p>Read more at <a class="reference external" href="http://ironpdf.com">http://ironpdf.com</a></p>
 <p>The key concept is to avoid time-consuming PDF generation APIs by rendering PDFs from HTML, CSS, Images and JavaScript.</p>
 <p>IronPDF&#8217;s core features are:</p>
 <ul class="simple">
@@ -50,26 +50,23 @@
 </ul>
 <p>The base requirements are .Net framework 4.0 on the windows platform.</p>
 <p>It works equally well in Forms Applications, Server Applications and Services, Web Applications, Secure Intranets, Console Apps, WPF Apps and MVC patterned websites.</p>
-<p>Read more at <a class="reference external" href="http://ironpdf.com">http://ironpdf.com</a></p>
-<div class="section" id="run-before-you-can-walk">
-<h2>Run before you can walk.<a class="headerlink" href="#run-before-you-can-walk" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="using-nuget-pack-installer">
-<h3>Using NuGet Pack Installer<a class="headerlink" href="#using-nuget-pack-installer" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="hello-world">
+<h2>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h2>
+<p><strong>NuGet Installer</strong></p>
 <div class="highlight-bash"><div class="highlight"><pre>PM&gt; Install-Package IronPdf
 </pre></div>
 </div>
-</div>
-<div class="section" id="line-hello-world">
-<h3>1 Line Hello World<a class="headerlink" href="#line-hello-world" title="Permalink to this headline">¶</a></h3>
+<p><strong>1 Line Hello World</strong></p>
 <div class="highlight-c#"><div class="highlight"><pre>new IronPdf.HtmlToPdf().RenderHtmlAsPdf(@“&lt;p&gt;hello world&lt;/p&gt;“).SaveAs(“test.pdf”);
 </pre></div>
 </div>
 <div class="section" id="contents">
-<h4>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h4>
+<h3>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="what.html">What is IronPdf ?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="what.html#run-before-you-can-walk">Run before you can walk.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what.html#hello-world">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="what.html#features">Features</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">QuickStart</a><ul>
@@ -78,8 +75,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing IronPdf</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#detailed-nuget-instructions">Detailed NuGet Instructions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#alternative-installation-by-downloading-ironpdf-dll">Alternative Installation by Downloading IronPdf.dll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#using-nuget">Using NuGet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#manual-installation">Manual Installation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="ref.html">Object Reference</a><ul>
@@ -91,9 +88,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License Terms</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="license.html#tldr">TLDR:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="license.html#licenses-keys">Licenses keys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="license.html#full-license-text">Full License Text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="license.html#acknowledgements-and-sub-licenses">Acknowledgements and Sub-Licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license.html#acknowledgements">Acknowledgements</a></li>
 </ul>
 </li>
 </ul>
@@ -103,7 +99,6 @@
 <li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
 <li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -117,12 +112,8 @@
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">IronPDF Pdf Generation Library Documentation</a><ul>
-<li><a class="reference internal" href="#run-before-you-can-walk">Run before you can walk.</a><ul>
-<li><a class="reference internal" href="#using-nuget-pack-installer">Using NuGet Pack Installer</a></li>
-<li><a class="reference internal" href="#line-hello-world">1 Line Hello World</a><ul>
+<li><a class="reference internal" href="#hello-world">Hello World</a><ul>
 <li><a class="reference internal" href="#contents">Contents</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

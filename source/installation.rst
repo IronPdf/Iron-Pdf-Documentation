@@ -8,7 +8,7 @@ For Microsoft Visual Studio Users - the easiest way to install IronPdf is using 
 
      PM> Install-Package IronPdf
 
-Detailed NuGet Instructions 
+Using NuGet 
 --------------------------------------------------------------------------------
 * Right click on your project in Visual Studio 'Solution Explorer'
 * Select "Manage Nuget Packages…"
@@ -19,9 +19,9 @@ Detailed NuGet Instructions
 For more info you can also find us at: https://www.nuget.org/packages/IronPdf/
 
 
-Alternative Installation by Downloading IronPdf.dll
+Manual Installation
 ------------------------------------------------------------------------------
-* Download IronPdf as DLL from http://localhost/iron/packages/IronPdf.zip
+* Download IronPdf as DLL from http://ironpdf.com/packages/IronPdf.zip
 * Extract the DLL to a logical location inside your project *(or GAC for advanced users)*
 * In Visual Studio 'Solution Explorer’”:
         * Right click on your project and choose Add > Reference....
