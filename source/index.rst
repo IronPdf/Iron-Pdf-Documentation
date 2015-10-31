@@ -1,22 +1,12 @@
-.. toctree::
-	:maxdepth: 3
-
-	quickstart
-	installation
-	license
-	object-reference/htmltopdf
-	object-reference/aspxtopdf
-	object-reference/pdfprintoptions
-	object-reference/pdfresource
 
 
-=================
-What is IronPdf
-=================
-
-
+======================================================
+IronPDF Pdf Generation Library Documentation
+======================================================
 
 IronPDF is a commercial Grade PDF Generation library for the .Net platform, written in C#.
+
+http://ironpdf.com
 
 The key concept is to avoid time-consuming PDF generation APIs by rendering PDFs from HTML, CSS, Images and JavaScript.
 
@@ -51,33 +41,19 @@ Run before you can walk.
      new IronPdf.HtmlToPdf().RenderHtmlAsPdf(@“<p>hello world</p>“).SaveAs(“test.pdf”);
 
 
-
-Why IronPDF Rocks
-=================
-
-  IronPDF doesn't try to render HTML.  It actually print up an instance of a real standard compliant web browser behind the scenes (without any additional software needing to be installed).  
-
-The HTML gets rendered with complete accuracy - and in a vector format suitable for the highest standards of commercial printing.
-
-* No more convoluted PDF APIs.  
-* Just make it look right in HTML - and then use IronPDF output your PDF as a file, stream or byte array.
-* Full IntelliSense documentation which even includes embedded code examples.
-* No External Dependancies.  Just 1 Dll.
-* Deploy almost anywhere on a windows environment without special permissions. No EXE files, Msi or Native Dlls to install.  *No COM objects or Interop hell.*
-* No special security permissions required.
-* CSS3, HTML5 and Javascript compliance.
-* Real, standards compliant HTML rendering and pixel perfect PDF conversion with vector and font support.
-* Javascript and AJAX content can also be rendered into your PDFs.
-* High Performance - PDF from HTML rendering takes about 125ms.  Remote HTTP requests will obviously take longer.  *First usage take extra overhead as the browser virtual instance is initiated. Thereafter it is available almost instantly throughout your application process.*  
-* Low memory footprint about under 10MB memory. Our smart Garbage Collection This allows for instance like performance from static methods.  Dynamically makes smart choices to minimize impact on CPU and Free Ram.  
-* PDF rendering can be achieved in parallel using threads or Parallel.ForEach. This makes  batch conversions even faster.
-* HTML forms fields can automagically become editable areas in your PDFs 
-* Working code Examples on GitHub
-* Customizable WebClient functionally allows Printing of HTML Documents even behind logins or on secure intranets.
-* We cant to get better every day. If this documentation or software lacks in any way, please post a GitHub issue and we will respond.
    
-Indices and tables
+Contents
 ==================
+
+.. toctree::
+	:maxdepth: 2
+
+	what
+	quickstart
+	installation
+	ref
+	license
+	
 
 * :ref:`genindex`
 * :ref:`modindex`

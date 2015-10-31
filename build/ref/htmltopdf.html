@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>IronPdf.HtmlToPdf &mdash; IronPdf 4.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '4.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="IronPdf 4.0.0 documentation" href="../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ironpdf-htmltopdf">
+<h1>IronPdf.HtmlToPdf<a class="headerlink" href="#ironpdf-htmltopdf" title="Permalink to this headline">¶</a></h1>
+<p>HtmlToPdf is your go-to class for creating PDFs in .Net</p>
+<p>It can work from HTMl string or fetch URL (with all of their supporting assets).</p>
+<p>A custom System.Net.WebCient can optionally be assign to manage requests to render webpages with special security provisions.</p>
+<div class="section" id="examples">
+<h2>Examples:<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>This should help you get started.  IntelliSense should take it from there!</p>
+<div class="highlight-c#"><div class="highlight"><pre><span class="k">using</span> <span class="nn">IronPdf</span><span class="p">;</span>
+
+<span class="c1">//..</span>
+
+<span class="n">HtmlToPdf</span> <span class="n">HtmlToPdf</span> <span class="p">=</span> <span class="k">new</span> <span class="n">IronPdf</span><span class="p">.</span><span class="n">HtmlToPdf</span><span class="p">();</span>
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">PrintOptions</span><span class="p">.</span><span class="n">EnableJavaScript</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="c1">// Many more PrintOptions available - check IntelliSense</span>
+
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">RenderHtmlAsPdf</span><span class="p">(</span><span class="s">&quot;&lt;p&gt;html&lt;/p&gt;&quot;</span><span class="p">).</span><span class="n">SaveAs</span><span class="p">(</span><span class="s">&quot;Path/FileName.Pdf&quot;</span><span class="p">);</span>
+<span class="c1">//or</span>
+
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">RenderUrlAsPdf</span><span class="p">(</span><span class="s">&quot;http://ironpdf.com&quot;</span><span class="p">).</span><span class="n">SaveAs</span><span class="p">(</span><span class="s">&quot;FileName.Pdf&quot;</span><span class="p">);</span>
+<span class="c1">//or</span>
+
+
+<span class="n">HtmlToPdf</span><span class="p">.</span><span class="n">RenderUrlAsPdf</span><span class="p">(</span><span class="k">new</span> <span class="n">Uri</span><span class="p">(</span><span class="s">&quot;http://ironpdf.com&quot;</span><span class="p">)).</span><span class="n">SaveAs</span><span class="p">(</span><span class="s">&quot;FileName.Pdf&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>You can also save the result as a Stream or Byte array for advanced usage.  <em>See IronPdf.PdfResource</em>.</p>
+<div class="section" id="full-object-reference-for-ironpdf-htmltopdf">
+<h3>Full Object Reference for IronPdf.HtmlToPdf<a class="headerlink" href="#full-object-reference-for-ironpdf-htmltopdf" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="_CPPv2N7IronPdf9HtmlToPdfE">
+<span id="IronPdf::HtmlToPdf"></span><span class="target" id="project0classIronPdf_1_1HtmlToPdf"></span><em class="property">class </em><code class="descclassname">IronPdf::</code><code class="descname">HtmlToPdf</code><a class="headerlink" href="#_CPPv2N7IronPdf9HtmlToPdfE" title="Permalink to this definition">¶</a></dt>
+<dd><p><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span>IronPdf.HtmlToPdf</span></a> allows you to create PDF files from any web page or HTML Snippet </p>
+<p>Example:</p>
+<p><code class="docutils literal"><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">HtmlToPdf</span></span></a> <span class="pre">myHtmlToPdf</span> <span class="pre">=</span> <span class="pre">new</span> <a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">IronPdf.HtmlToPdf()</span></span></a><span class="pre">;</span></code></p>
+<p><code class="docutils literal"> <span class="pre">myHtmlToPdf.PrintOptions.Title</span> <span class="pre">=</span> <span class="pre">&quot;A</span> <span class="pre">Great</span> <span class="pre">PDF</span> <span class="pre">Title&quot;;</span></code></p>
+<p><code class="docutils literal"> <span class="pre">myHtmlToPdf.PrintOptions.EnableJavaScript</span> <span class="pre">=</span> <span class="pre">true;</span></code></p>
+<p><code class="docutils literal"> <span class="pre">myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs(&quot;Path\File.Pdf&quot;);</span></code></p>
+<p><code class="docutils literal"> </code> </p>
+<div class="breathe-sectiondef container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt>
+<span class="target" id="project0classIronPdf_1_1HtmlToPdf_1a8c811e7ad1969c17b628666aa7bb34ef"></span><code class="descname">IronPdf.HtmlToPdf.HtmlToPdf()</code></dt>
+<dd><p><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span>IronPdf.HtmlToPdf</span></a> allows you to create PDF files from any web page or HTML Snippet </p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="project0classIronPdf_1_1HtmlToPdf_1add42c2ae954d5d4249e268481e0d6554"></span><code class="descname">IronPdf.HtmlToPdf.HtmlToPdf(PdfPrintOptions PrintOptions)</code></dt>
+<dd><p><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span>IronPdf.HtmlToPdf</span></a> allows you to create PDF files from any web page or HTML Snippet </p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">PrintOptions</span></code> - <p>Sets PDF output options such as Paper-Size, Dpi, Headers and Footers using an instance of the IronPDF.PDFPrintOptions Class.</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="project0classIronPdf_1_1HtmlToPdf_1ace652aebd43df37f768dc74b88b6ef24"></span><code class="descname">PdfResource IronPdf.HtmlToPdf.RenderUrlAsPdf(Uri Url, WebClient CustomWebClient)</code></dt>
+<dd><p>Renders the URL as PDF binary data. </p>
+<p>Note: Custom WebClient and PDFPrinting options can be set optionally.</p>
+<p>Example:</p>
+<p><code class="docutils literal"><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">HtmlToPdf</span></span></a> <span class="pre">myHtmlToPdf</span> <span class="pre">=</span> <span class="pre">new</span> <a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">IronPdf.HtmlToPdf()</span></span></a><span class="pre">;</span></code></p>
+<p><code class="docutils literal"> <span class="pre">Uri</span> <span class="pre">myUri</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Uri(&quot;http://www.example.com&quot;);</span></code></p>
+<p><code class="docutils literal"> <span class="pre">myHtmlToPdf.RenderUrlAsPdf(myUri).SaveAs(&quot;Path\File.Pdf&quot;);</span></code></p>
+<p><code class="docutils literal"> </code> </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>PdfResource</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">Url</span></code> - <p>An absolute Uri.</p>
+</li>
+<li><code class="first docutils literal"><span class="pre">CustomWebClient</span></code> - <p>A custom System.Net.WebClient for fetching the url. This allows prgramatic control of cookies, credentials and proxy settings.</p>
+</li>
+</ul>
+</dd>
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">System.Exception</span></code> - <p>RenderUrlAsPdf - Url must be a fully formed, absolute URI starting with <a class="reference external" href="http://">http://</a> or <a class="reference external" href="https://">https://</a> - + Url.ToString()</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="project0classIronPdf_1_1HtmlToPdf_1a2c139e484a7debb76d4d573d2674cd3e"></span><code class="descname">PdfResource IronPdf.HtmlToPdf.RenderUrlAsPdf(string Url, WebClient CustomWebClient)</code></dt>
+<dd><p>Renders the URL as PDF binary data. </p>
+<p>Note: Custom WebClient and PDFPrinting options can be set optionally.</p>
+<p>Example:</p>
+<p><code class="docutils literal"><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">HtmlToPdf</span></span></a> <span class="pre">myHtmlToPdf</span> <span class="pre">=</span> <span class="pre">new</span> <a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">IronPdf.HtmlToPdf()</span></span></a><span class="pre">;</span></code></p>
+<p><code class="docutils literal"> <span class="pre">myHtmlToPdf.RenderUrlAsPdf(&quot;http://www.example.com&quot;).SaveAs(&quot;Path\File.Pdf&quot;);</span></code></p>
+<p><code class="docutils literal"> </code> </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>PdfResource</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">Url</span></code> - <p>An absolute Uri as a string.</p>
+</li>
+<li><code class="first docutils literal"><span class="pre">CustomWebClient</span></code> - <p>A custom System.Net.WebClient for fetching the url. This allows prgramatic control of cookies, credentials and proxy settings.</p>
+</li>
+</ul>
+</dd>
+<dt><strong>Exceptions</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">System.Exception</span></code> - <p>RenderUrlAsPdf - Url must be a fully formed, absolute URI starting with <a class="reference external" href="http://">http://</a> or <a class="reference external" href="https://">https://</a> - + Url.ToString()</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<span class="target" id="project0classIronPdf_1_1HtmlToPdf_1ab8dc3c8a7e81404b81fa5a750b18054f"></span><code class="descname">PdfResource IronPdf.HtmlToPdf.RenderHtmlAsPdf(string Html, Uri BaseUrl)</code></dt>
+<dd><p>Creates a PDF file from an HTML string, and returns it as an IronPdf.PdfResource </p>
+<p>Note: Custom WebClient and PDFPrinting options can be set optionally.</p>
+<p>Example:</p>
+<p><code class="docutils literal"><a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">HtmlToPdf</span></span></a> <span class="pre">myHtmlToPdf</span> <span class="pre">=</span> <span class="pre">new</span> <a class="reference internal" href="#project0classIronPdf_1_1HtmlToPdf"><span><span class="pre">IronPdf.HtmlToPdf()</span></span></a><span class="pre">;</span></code></p>
+<p><code class="docutils literal"> <span class="pre">myHtmlToPdf.RenderHtmlAsPdf(&quot;&amp;lt;p&amp;gt;html&amp;lt;/p&amp;gt;&quot;).SaveAs(&quot;Path\File.Pdf&quot;);</span></code></p>
+<p><code class="docutils literal"> </code> </p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>A PdfResource</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last">
+<li><code class="first docutils literal"><span class="pre">Html</span></code> - <p>The HTML to be turned into a PDF as a string</p>
+</li>
+<li><code class="first docutils literal"><span class="pre">BaseUrl</span></code> - <p>Setting the BaseURL property gives the HTML a relative content link, links, css etc...</p>
+</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt>
+<span class="target" id="project0classIronPdf_1_1HtmlToPdf_1a2459c190a13a9bafb6dda42ca375818f"></span><code class="descname">PdfPrintOptions IronPdf.HtmlToPdf.PrintOptions</code></dt>
+<dd><p>Sets PDF output options such as Paper-Size, Dpi, Headers and Footers </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">IronPdf.HtmlToPdf</a><ul>
+<li><a class="reference internal" href="#examples">Examples:</a><ul>
+<li><a class="reference internal" href="#full-object-reference-for-ironpdf-htmltopdf">Full Object Reference for IronPdf.HtmlToPdf</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/ref/htmltopdf.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, http://IronPdf.com.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="../_sources/ref/htmltopdf.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

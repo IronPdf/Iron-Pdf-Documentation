@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>IronPDF Pdf Generation Library Documentation &mdash; IronPdf 4.0.0 documentation</title>
+    <title>What is IronPdf ? &mdash; IronPdf 4.0.0 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,8 +23,9 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="IronPdf 4.0.0 documentation" href="#" />
-    <link rel="next" title="What is IronPdf ?" href="what.html" />
+    <link rel="top" title="IronPdf 4.0.0 documentation" href="index.html" />
+    <link rel="next" title="QuickStart" href="quickstart.html" />
+    <link rel="prev" title="IronPDF Pdf Generation Library Documentation" href="index.html" />
    
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
@@ -37,10 +38,9 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="ironpdf-pdf-generation-library-documentation">
-<h1>IronPDF Pdf Generation Library Documentation<a class="headerlink" href="#ironpdf-pdf-generation-library-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="what-is-ironpdf">
+<h1>What is IronPdf ?<a class="headerlink" href="#what-is-ironpdf" title="Permalink to this headline">¶</a></h1>
 <p>IronPDF is a commercial Grade PDF Generation library for the .Net platform, written in C#.</p>
-<p><a class="reference external" href="http://ironpdf.com">http://ironpdf.com</a></p>
 <p>The key concept is to avoid time-consuming PDF generation APIs by rendering PDFs from HTML, CSS, Images and JavaScript.</p>
 <p>IronPDF&#8217;s core features are:</p>
 <ul class="simple">
@@ -64,44 +64,27 @@
 <div class="highlight-c#"><div class="highlight"><pre>new IronPdf.HtmlToPdf().RenderHtmlAsPdf(@“&lt;p&gt;hello world&lt;/p&gt;“).SaveAs(“test.pdf”);
 </pre></div>
 </div>
-<div class="section" id="contents">
-<h4>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h4>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="what.html">What is IronPdf ?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="what.html#run-before-you-can-walk">Run before you can walk.</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="quickstart.html">QuickStart</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#get-ironpdf-installed-in-your-project-in-60-seconds">Get IronPdf Installed in your project in 60 seconds.</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quickstart.html#basic-usage">Basic Usage</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installing IronPdf</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#detailed-nuget-instructions">Detailed NuGet Instructions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#alternative-installation-by-downloading-ironpdf-dll">Alternative Installation by Downloading IronPdf.dll</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ref.html">Object Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ref.html#ironpdf-htmltopdf">IronPdf.HtmlToPdf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ref.html#ironpdf-aspxtopdf">IronPdf.AspxToPdf</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ref.html#ironpdf-pdfprintoptions">IronPdf.PdfPrintOptions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ref.html#ironpdf-pdfresource">IronPdf.PdfResource</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="license.html">License Terms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="license.html#tldr">TLDR:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="license.html#licenses-keys">Licenses keys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="license.html#full-license-text">Full License Text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="license.html#acknowledgements-and-sub-licenses">Acknowledgements and Sub-Licenses</a></li>
-</ul>
-</li>
-</ul>
-</div>
+<div class="section" id="why-ironpdf-rocks">
+<h4>Why IronPDF Rocks<a class="headerlink" href="#why-ironpdf-rocks" title="Permalink to this headline">¶</a></h4>
+<p>IronPDF doesn&#8217;t try to render HTML.  It actually print up an instance of a real standard compliant web browser behind the scenes (without any additional software needing to be installed).</p>
+<p>The HTML gets rendered with complete accuracy - and in a vector format suitable for the highest standards of commercial printing.</p>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+<li>No more convoluted PDF APIs.</li>
+<li>Just make it look right in HTML - and then use IronPDF output your PDF as a file, stream or byte array.</li>
+<li>Full IntelliSense documentation which even includes embedded code examples.</li>
+<li>No External Dependancies.  Just 1 Dll.</li>
+<li>Deploy almost anywhere on a windows environment without special permissions. No EXE files, Msi or Native Dlls to install.  <em>No COM objects or Interop hell.</em></li>
+<li>No special security permissions required.</li>
+<li>CSS3, HTML5 and Javascript compliance.</li>
+<li>Real, standards compliant HTML rendering and pixel perfect PDF conversion with vector and font support.</li>
+<li>Javascript and AJAX content can also be rendered into your PDFs.</li>
+<li>High Performance - PDF from HTML rendering takes about 125ms.  Remote HTTP requests will obviously take longer.  <em>First usage take extra overhead as the browser virtual instance is initiated. Thereafter it is available almost instantly throughout your application process.</em></li>
+<li>Low memory footprint about under 10MB memory. Our smart Garbage Collection This allows for instance like performance from static methods.  Dynamically makes smart choices to minimize impact on CPU and Free Ram.</li>
+<li>PDF rendering can be achieved in parallel using threads or Parallel.ForEach. This makes  batch conversions even faster.</li>
+<li>HTML forms fields can automagically become editable areas in your PDFs</li>
+<li>Working code Examples on GitHub</li>
+<li>Customizable WebClient functionally allows Printing of HTML Documents even behind logins or on secure intranets.</li>
+<li>We cant to get better every day. If this documentation or software lacks in any way, please post a GitHub issue and we will respond.</li>
 </ul>
 </div>
 </div>
@@ -114,13 +97,13 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Table Of Contents</a></h3>
+  <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">IronPDF Pdf Generation Library Documentation</a><ul>
+<li><a class="reference internal" href="#">What is IronPdf ?</a><ul>
 <li><a class="reference internal" href="#run-before-you-can-walk">Run before you can walk.</a><ul>
 <li><a class="reference internal" href="#using-nuget-pack-installer">Using NuGet Pack Installer</a></li>
 <li><a class="reference internal" href="#line-hello-world">1 Line Hello World</a><ul>
-<li><a class="reference internal" href="#contents">Contents</a></li>
+<li><a class="reference internal" href="#why-ironpdf-rocks">Why IronPDF Rocks</a></li>
 </ul>
 </li>
 </ul>
@@ -131,15 +114,16 @@
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
-  <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="what.html" title="next chapter">What is IronPdf ?</a></li>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">IronPDF Pdf Generation Library Documentation</a></li>
+      <li>Next: <a href="quickstart.html" title="next chapter">QuickStart</a></li>
   </ul></li>
 </ul>
 </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/index.txt"
+      <li><a href="_sources/what.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -168,7 +152,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
       
       |
-      <a href="_sources/index.txt"
+      <a href="_sources/what.txt"
           rel="nofollow">Page source</a>
     </div>
 

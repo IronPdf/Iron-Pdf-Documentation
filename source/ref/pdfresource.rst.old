@@ -1,0 +1,37 @@
+***********************
+IronPdf.PdfResource
+***********************
+
+ All of IronPdf.HtmlToPdf's rendering methods output an instance of a IronPDF.PdfResource.
+
+  We decided to work this way to make you job as a coder easier.  
+
+PdfResource can automatically save a file for you, but it can also return an ByteArray (byte[]) as raw binary data or a System.IO.MemoryStream.  
+
+This is useful if you want to post-process you pdf, save to a database, or do something innovative we haven't even thought of yet!    
+
+Using IronPdf.PdfResource
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: c#
+
+	using IronPdf;
+
+	HtmlToPdf myPdfMaker = new IronPdf.HtmlToPdf();
+	PdfResource  myPdf = myPdfMaker.RenderHtmlAsPdf("<p>hello world</p>");
+	
+	//Now you have 3 ways to use the PDF data stored in myPdf:
+
+	PdfResource.SaveAs(@"C:\path\mypdf.pdf");
+	  // or 
+	System.IO.MemoryStream stream = PdfResource.Stream;
+	  //or 
+	byte[] data = BinaryData;
+
+
+
+Full Object Reference for IronPdf.PdfResource
+==================================================
+
+.. doxygenclass:: IronPdf::Pdfresource
+   :members:
