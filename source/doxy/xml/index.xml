@@ -69,8 +69,8 @@
   </compound>
   <compound refid="classIronPdf_1_1PdfResource" kind="class"><name>IronPdf::PdfResource</name>
     <member refid="classIronPdf_1_1PdfResource_1ac01cad5b3fd8d2da0339c9fc845fe09a" kind="variable"><name>_data</name></member>
-    <member refid="classIronPdf_1_1PdfResource_1aa26a77631548d5d15f4559b3b5849726" kind="property"><name>GetBinary</name></member>
-    <member refid="classIronPdf_1_1PdfResource_1aadfde6428fa94c9154c6deb068565690" kind="property"><name>GetStream</name></member>
+    <member refid="classIronPdf_1_1PdfResource_1a68fa4c05bf4ac530c2e7916c7fa7b788" kind="property"><name>BinaryData</name></member>
+    <member refid="classIronPdf_1_1PdfResource_1a0c1bc800af086fa6916c57e4bf72fd79" kind="property"><name>Stream</name></member>
     <member refid="classIronPdf_1_1PdfResource_1accffbb005909028ecdbc1ce689707744" kind="function"><name>PdfResource</name></member>
     <member refid="classIronPdf_1_1PdfResource_1aafaa3c00c9c184b75df8b8b4f9651ab6" kind="function"><name>SaveAs</name></member>
   </compound>
