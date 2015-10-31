@@ -187,5 +187,5 @@ Examples
 IronPdf.PdfResource Reference
 ------------------------------------------------------------
 
-.. doxygenclass:: IronPdf::Pdfresource
+.. doxygenclass:: IronPdf::PdfResource
    :members:   

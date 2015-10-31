@@ -2,7 +2,7 @@
 License Terms
 =================================================
 
-TLDR:
+TLDR;
 ----------
 This software isn't free for commercial usage or deployment .  Sorry, we work tirelessly to make the best software we can.
 
