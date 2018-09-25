@@ -2,6 +2,10 @@
 License Terms
 =================================================
 
+********************************************************
+Developer Notice: `The Iron PDF EULA Has Moved <https://ironpdf.com/docs/license/eula/>`_.   
+********************************************************
+
 TLDR;
 ----------
 This software isn't free for commercial usage or deployment .  Sorry, we work tirelessly to make the best software we can.

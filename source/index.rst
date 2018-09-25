@@ -4,7 +4,7 @@ IronPDF Pdf Generation Library Documentation
 
 
 ********************************************************
-Developer Notice: `Pdf Generation Library Documentation Moved to <https://ironpdf.com/docs/>`_.   
+Developer Notice: `The Pdf Generation Library Documentation Has Moved <https://ironpdf.com/tutorials/html-to-pdf/>`_.   
 ********************************************************
 
 IronPDF is a commercial Grade PDF Generation library for the .Net platform, written in C#.

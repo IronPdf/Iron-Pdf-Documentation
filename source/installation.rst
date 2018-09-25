@@ -2,6 +2,12 @@
 Installing IronPdf 
 ==================
 
+
+********************************************************
+Developer Notice: `The Pdf Library Installation Guide Has Moved <https://ironpdf.com/docs/questions/installation/>`_.   
+********************************************************
+
+
 For Microsoft Visual Studio Users - the easiest way to install IronPdf is using the **NuGet** Package Manager.
 
 .. code-block:: bash

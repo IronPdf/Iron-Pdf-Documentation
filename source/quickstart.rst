@@ -2,6 +2,10 @@
 QuickStart
 ==========
 
+********************************************************
+Developer Notice: `The Dot Net PDF QuickStart Guide Has Moved <https://ironpdf.com/docs/>`_.   
+********************************************************
+
 
 Get IronPdf Installed
 ----------------------------------------------------
