@@ -1,4 +1,4 @@
-Test hyperlink: `Stack Overflow <http://stackoverflow.com/>`_.  
+Test hyperlink: `Stack Overflow <http://stackoverflow.com/>`_.   
 
 ======================================================
 IronPDF Pdf Generation Library Documentation
