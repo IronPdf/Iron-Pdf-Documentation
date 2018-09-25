@@ -1,4 +1,11 @@
+<meta http-equiv="refresh" content="0; url=https://ironpdf.com/docs/">
+
+
+<a href="https://ironpdf.com/docs/">
+    IronPdf's documentation has moved from ReadTheDocs to https://ironpdf.com/docs/
+</a>
  
+<hr>
 
 ======================================================
 IronPDF Pdf Generation Library Documentation
